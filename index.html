@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <!-- Meta Tags -->
+    <meta name="author" cotent="">
+	<meta name="msapplication-TileColor" content="#ff5cad">
+	<meta name="theme-color" content="#ff5cad">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="">
+	<meta name="description" content="Twwixl a website where you can connect with your friends and family.">
+	<meta name="keywords" content="twwixl">
+	<meta property="og:title" content="" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Twwixl a website where you can connect with your friends and family." />
+	<meta property="og:site_name" content="twwixl.com">  
+	<meta itemprop="name" content="">  
+  <meta property="og:image" content=""/>
+	<meta itemprop="description" content="">  
+    <meta name="twitter:title" content="Twwixl">  
+    <meta name="twitter:description" content="Twwixl a website where you can connect with your friends and family.">  
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <meta charset="web-link" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" href="img/twwixl.svg">
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home Page | twixle</title>
+	
+    <div class="header">
+		<a href="index.html" class="logo"><img src="img/twwixl_Logo_Transparent_4x.png" alt="" height="40"  </a>
+		<div class="header-right">
+			
+			<a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+			<a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+		  <a href="#about">About</a>
+		  <a onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-fw fa-user"></i> Sign up</a>
+		</div>
+	  </div>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Favicon Import -->
+	<link rel="icon" href="img/twwixl.svg">
+	<link rel="shortcut icon" id="favicon" href="img/twwixl.svg">
+	<link rel="icon" type="image/png" href="img/twwixl.svg">
+	<link rel="icon" href="img/twwixl.svg">
+
+	<!-- CSS Import -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/login.css">
+
+	<!-- Share/Embed Content -->
+
+	<script src="script.js"></script>
+    <script 
+      src="https://kit.fontawesome.com/3fe16e504a.js" 
+      crossorigin="anonymous">
+    </script>
+  </head>
+  <body>
+    <p>
+      <span id="toggle-switch" title="Toggle Dark & Light Theme">
+        <i class="fas fa-moon" id="toggle-switch"></i>
+      </span>
+    </p>
+    <h1></h1>
+    <p></p>
+  </body>
+</html>
+
+	<!-- Sign Up-->
+	<!-- Button to open the modal -->
+	<h3> Click the Signup icon</h3>
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">X</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+<!-- An element to toggle between password visibility -->
+<input type="checkbox" onclick="myFunction()">Show Password
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:#00a7e1">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signup">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+	// Get the modal
+	var modal = document.getElementById('id01');
+	
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+	</script>
+	
+<!-- Footer -->
+<div class="footer">
+    <p>&copy; 2022 Twwixl, All rights reserved.</p>
+</div>
