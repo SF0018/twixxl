@@ -1,3 +1,4 @@
+
 :root {
   color-scheme: light;
 }
@@ -17,14 +18,14 @@
   text-align: center;
 }
 html {
-  --bck-color: #FFF;
+  --bck-color: #fafafa;
   --ft-color: #212121;
 
 }
 
 html.dark {
   --bck-color: #212121;
-  --ft-color: #FFF;
+  --ft-color: #fafafa;
 }
 
 body {

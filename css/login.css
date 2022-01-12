@@ -1,4 +1,9 @@
-
+/* Selection/Highlhgt Colour */
+::selection {
+  background-color: #b3d4fc;
+  color: #000000;
+  text-shadow: none;
+}
 :root {
   color-scheme: light;
 }
@@ -15,9 +20,6 @@ header {
     text-align: center;
     font-size: 35px;
   }
-
-
-
 /* Style the footer */
 footer {
     padding: 5px;
@@ -192,14 +194,7 @@ hr {
 }
 
 /* Navbar links */
-.navbar a {
-  float: left;
-  text-align: center;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-}
+
 
 /* Navbar links on mouse-over */
 
@@ -217,14 +212,14 @@ hr {
 
 
 html {
-  --bck-color: #FFF;
+  --bck-color: #fafafa;
   --ft-color: #212121;
 
 }
 
 html.dark {
   --bck-color: #212121;
-  --ft-color: #FFF;
+  --ft-color: #fafafa;
 }
 
 body {
@@ -256,5 +251,6 @@ h3 {
   justify-items: stretch;
 
 }
-
-
+.signin{
+  color: #000;
+}
