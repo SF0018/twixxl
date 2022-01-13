@@ -28,7 +28,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Home Page | twixle</title>
+		<!-- Pre-loader -->
+		<div class="loader_bg">
+			<div class="loader"></div>
+		</div>
 	
+		<script>
+			setTimeout(function(){
+				$('.loader_bg').fadeToggle();
+			}, 1500);
+		</script>	
     <div class="header">
 		<a href="index.html" class="logo"><img src="img/twwixl_Logo_Transparent_4x.png" alt="" height="40">  </a>
 		<div class="header-right">
@@ -118,7 +127,6 @@
 		}
 	}
 	</script>
-	
 <!-- Footer -->
 <div class="footer">
     <p>&copy; 2022 Twwixl, All rights reserved.</p>
