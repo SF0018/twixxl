@@ -219,6 +219,7 @@ h5 {
   padding: 1px;
   outline: none;
   background-color: #fafafa;
+  color: #212121;
 }
 
 .input-field:focus {
