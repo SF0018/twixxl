@@ -97,9 +97,9 @@ footer {
   
   /* Change the background color on mouse-over */
   .header a:hover {
-    background-color: #ddd;
-    color: black;
-  }
+      opacity: 0.9;
+      
+    }
   
   
   /* Style the active/current link*/
@@ -124,7 +124,9 @@ footer {
 .navbar {
   width: 100%;
   overflow: auto;
+  opacity: 1;
 }
+ 
 html {
   --bck-color: #fafafa;
   --ft-color: #212121;
@@ -173,7 +175,7 @@ h2 {
 }
 .box {
   position: absolute;
-  width: 350px;
+  width: 560px;
   height: 470px;
   background: #fafafa;
   border: 3px solid #212121;
@@ -216,12 +218,23 @@ h5 {
 /* Style the input fields */
 .input-field {
   width: 100%;
-  padding: 1px;
+  padding: 0px;
   outline: none;
   background-color: #fafafa;
   color: #212121;
 }
-
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+/*Change text in autofill textbox*/
+input:-webkit-autofill
+{
+ -webkit-text-fill-color: #212121 !important;
+}
 .input-field:focus {
   border: 2px solid #ff5cad;
 }
@@ -240,4 +253,3 @@ h5 {
 .btn:hover {
   opacity: 1;
 }
-
