@@ -47,14 +47,26 @@
 	  </div>
 	 <h1>Welcome to,</h1>
 	 <h2>twwixl</h2>
-	 <div class="box">Sign up <h3> Please fill in this form to create an account.</h3>
-		<hr> <label for="email"><b>Email</b></label>
-		<input type="text" placeholder="Enter Email" name="email" required="">
-		<label for="psw"><b>Password</b></label>
-		<input type="password" placeholder="Enter Password" name="psw" required="">
+	 <div class="box">Login <h3> Please fill in this form to login to your account.</h3>
+		<hr>
+		<form action="/action_page.php">
+			<div class="input-container">
+			  <i class="fa fa-user icon"></i>
+			  <input class="input-field" type="text" placeholder="Username" name="usrnm">
+			</div>
+			<div class="input-container">
+			  <i class="fa fa-envelope icon"></i>
+			  <input class="input-field" type="text" placeholder="Email" name="email">
+			</div>
+			<div class="input-container">
+			  <i class="fa fa-key icon"></i>
+			  <input class="input-field" type="password" placeholder="Password" name="psw">
+			</div>
+			<button type="submit" class="btn">Register</button>
+		  </form>
 	
 		<h4>By creating an account you agree to our <a href="#" style="color:#00a7e1">Terms &amp; Privacy</a>.</h4>
-		<h5>Already have an account? <a href="#" style="color:#00a7e1"> Login</a></h5>
+		<h5>Don't have a account? <a href="#" style="color:#00a7e1"> Signup</a></h5>
 	</div>
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Favicon Import -->

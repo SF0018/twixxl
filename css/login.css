@@ -174,10 +174,10 @@ h2 {
 .box {
   position: absolute;
   width: 350px;
-  height: 440px;
+  height: 470px;
   background: #fafafa;
   border: 3px solid #212121;
-  top: 20%;
+  top: 15%;
   left: 40%;
   font-size: 40px;
   color: #212121;
@@ -192,19 +192,51 @@ hr {
 h4 {
   font-size: 12px;
 }
-input[type=text], input[type=password] {
-  width: 80%;
-  padding: 0px;
-  margin: 2px -1 2px -1;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-  color: #000;
-}
-b {
-  font-size: 34px;
-}
 h5 {
-  font-size: 15px;
+  font-size: 13px;
+}
+* {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: #212121;
+  color: white;
+  min-width: 60px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 1px;
+  outline: none;
+  background-color: #fafafa;
+}
+
+.input-field:focus {
+  border: 2px solid #ff5cad;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #ff5cad;
+  color: white;
+  padding: 10px 1px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
 }
 
