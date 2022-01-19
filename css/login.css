@@ -18,65 +18,57 @@ color: #fafafa;
 .loader_bg{
   position: fixed;
   z-index: 999999;
-  background-color: var(--link-color);
+  background: var(--bck-color);
   width: 100%;
   height: 100%;
 }
-.loader{
-  border: 0 soild transparent;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: calc(50vh - 75px);
-  left: calc(50vw - 75px);
-}
-.loader:before, .loader:after{
-  content: '';
-  border: 1em solid ;
-  color: var(--link-color);
-  border-radius: 50%;
-  width: inherit;
-  height: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: loader 2s linear infinite;
-  opacity: 0;
-}
-.loader:before{
-  animation-delay: .5s;
-}
-@keyframes loader{
-  0%{
-      transform: scale(0);
-      opacity: 0;
-  }
-  50%{
-      opacity: 1;
-  }
-  100%{
-      transform: scale(1);
-      opacity: 0;
-  }
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+.loader-container {
+  position: absolute;
+  background: var(--bck-color);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-in-out;
+}
+.dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background:  var(--link-color);
+  margin: 0 10px;
+  animation: loader infinite 0.3s alternate;
+}
+.d2 {
+  animation-delay: 0.05s;
+}
+.d3 {
+  animation-delay: 0.1s;
+}
+@keyframes loader {
+  100% {
+    transform: translateY(-30px);
+  }
+}
 .is-hidden { 
 display: none; 
 }
+
 header {
   
     padding: 30px;
     text-align: center;
     font-size: 35px;
-  }
-/* Style the footer */
-footer {
-    padding: 5px;
-    text-align: center;
-    padding-bottom: 0px;
-    color: white;
-   
   }
   /* Style the header links */
   .header a {
@@ -102,14 +94,6 @@ footer {
       
     }
   
-  
-  /* Style the active/current link*/
-  .header a.active {
-    background-color: #ff5cad;
-    color: white;
-    border-radius: 30px;
-  }
-  
   /* Float the link section to the right */
   .header-right {
     float: right;
@@ -119,16 +103,17 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-
     text-align: center;
   }
-  /* Style the navigation bar */
-.navbar {
-  width: 100%;
-  overflow: auto;
-  opacity: 1;border-radius: 30px;
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #ff5cad;
+    border-radius: 30px;
 }
- 
+.nav-link:hover{
+  color: #ff5cad;
+}
+.nav-link 
 html {
   --bck-color: #fafafa;
   --ft-color: #212121;
@@ -265,7 +250,7 @@ h2 {
 
 
 .forgot-password-link:hover{
-	background: rgba(174, 19, 182, 0.3);
+	background: rgba(255, 92, 173, 0.3);
 }
 
 button {
@@ -277,6 +262,18 @@ button {
 	color: #fff;
 	font-size: 1rem;
 	font-weight: bolder;
+  opacity: 1;
+}
+button:hover {
+	height: 50px;
+	background: #ff5cad;
+	outline: none;
+	border: none;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: bolder;
+  opacity: 0.9;
 }
 
 .join-link {
@@ -296,5 +293,5 @@ color: var(--link-color);
 }
 
 .join-now:hover{
-	background: rgba(174, 19, 182, 0.3);
+	background: rgba(255, 92, 173, 0.3);
 }
