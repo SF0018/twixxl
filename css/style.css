@@ -40,7 +40,7 @@ body {
 a:link,
 a:visited,
 a:active {
-  color: var(--link-color);
+  color: #ff5cad;
 }
 fas fa-moon  {
   position: fixed;
@@ -55,3 +55,127 @@ h1 {
   width: 100%;
   text-align: center;
 }
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.container {
+	width: 320px;
+	height: 480px;
+	background: #fff;
+	box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);
+	position: absolute;
+	top: 50%;
+	left: 85%;
+	transform: translate(-50%, -50%);
+	border-radius: 7px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 1rem;
+}
+
+.container h4{
+	color: #212121;
+	font-size: 2rem;
+}
+
+.container h4 i{
+	font-size: 1.8rem;
+	padding-left: .1rem;
+}
+
+.text p{
+	font-size: .8rem;
+	padding-top: 0.3rem;
+  color: #212121;
+}
+
+.input {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 0.7em;
+}
+
+.your-input input{
+	width: 100%;
+	height: 50px;
+	padding-top: 1.1rem;
+	padding-left: 9px;
+	outline: none;
+	border: 1px solid #8c8c8c;
+	border-radius: 3px;
+	transition: .2s;
+}
+
+.your-input label {
+	position: absolute;
+	top: 30%;
+	left: 10px;
+	font-size: 1.1rem;
+	color: #8c8c8c;
+	transition: .2s;
+}
+
+.input input:focus ~ label,
+.input input:valid ~ label{
+	top: 10%;
+	font-size: .8rem;
+	color: #000;
+}
+
+.input input:focus {
+	border-width: 2px;
+	border-color: #ff5cad;
+}
+
+.forgot-password-link {
+	width: 140px;
+	padding: .2rem;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bolder;
+	color: #ff5cad;
+	transition: .3s;
+	border-radius: 12px;
+}
+
+.forgot-password-link:hover{
+	background: rgba(174, 19, 182, 0.3);
+}
+
+button {
+	height: 50px;
+	background: #ff5cad;
+	outline: none;
+	border: none;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: bolder;
+}
+
+.join-link {
+text-decoration: none;
+font-weight: bolder;
+color: #ff5cad;
+}
+
+.join-now{
+	text-decoration: none;
+	font-weight: bolder;
+	color: #ff5cad;
+	border-radius: 12px;
+	transition: .3s;
+	font-weight: bolder;
+	padding: .2rem;
+}
+
+.join-now:hover{
+	background: rgba(174, 19, 182, 0.3);
+}
+
