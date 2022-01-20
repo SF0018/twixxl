@@ -21,12 +21,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="icon" href="img/twwixl.svg">
 <html>
-<head>
+	<header>
+		<div class="header">
+			<a href="index.html" class="logo"><img src="img/twwixl_Logo_Transparent_4x.png" alt="" height="35">  </a>  </div>
+			  <ul class="nav nav-pills justify-content-end">
+				<li class="nav-item">
+				  <a class="nav-link active" href="index.html" title="Signup"><i class="fa fa-fw fa-user"></i> Signup</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="contact.html"title="Contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="about.html"title="About"><i class="fa fa-fw fa-info-circle"></i>About</a>
+				</li>
+			  </ul>
+	 </header>
+	 <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+		<ul class="nav-item">
+			<div class="header">>
+				  <ul class="nav nav-pills justify-content-end">
+					<li class="nav-item">
+					  <a class="nav-link active" href="index.html" title="Signup"><i class="fa fa-fw fa-user"></i> Signup</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="contact.html"title="Contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="about.html"title="About"><i class="fa fa-fw fa-info-circle"></i>About</a>
+					</li>
+				  </ul>
+		</ul>
+	  </div>
+<script>
+	function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+</script>
+
+	 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Home | twixl</title>
-	<h1>twwixl</h1>
+
 	
 	<!-- Favicon Import -->
 	<link rel="icon" href="img/twwixl.svg">
@@ -40,24 +80,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 
+
 	<!-- Share/Embed Content -->
-	<script src="script.js"></script>
-    <script 
-      src="https://kit.fontawesome.com/3fe16e504a.js" 
-      crossorigin="anonymous">
-    </script>
-  </head>
-  <body>
-    <p>
-      <span id="toggle-switch" title="Toggle Dark & Light Theme">
-        <i class="fas fa-moon" id="toggle-switch"></i>
-      </span>
-    </p>
-    <h1></h1>
-    <p></p>
-	<!-- Footer -->
-	<div class="footer">
-		<p>&copy; 2022 Twwixl, All rights reserved.</p>
-	</div>
+	
+
 </body>
 </html>

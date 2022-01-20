@@ -14,7 +14,7 @@ color: #fafafa;
   padding: 25px;
   height: 2000px;
 }
-/* Preloader dark */
+/* Preloader */
 .loader_bg{
   position: fixed;
   z-index: 999999;
@@ -302,3 +302,4 @@ color: var(--link-color);
 .join-now:hover{
 	background: rgba(255, 92, 173, 0.3);
 }
+/* moblie view */
