@@ -22,7 +22,6 @@ color: #fafafa;
   width: 100%;
   height: 100%;
 }
-
 *,
 ::before,
 ::after {
@@ -30,7 +29,6 @@ color: #fafafa;
   margin: 0;
   padding: 0;
 }
-
 .loader-container {
   position: absolute;
   background: var(--bck-color);
@@ -45,15 +43,18 @@ color: #fafafa;
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background:  var(--link-color);
+  background:  #ff5cad;
   margin: 0 10px;
   animation: loader infinite 0.3s alternate;
+  transition: 0.01s;
 }
 .d2 {
   animation-delay: 0.05s;
+  transition: 0.01s;
 }
 .d3 {
   animation-delay: 0.1s;
+  transition: 0.01s;
 }
 @keyframes loader {
   100% {
@@ -111,9 +112,14 @@ header {
     border-radius: 30px;
 }
 .nav-link:hover{
-  color: #ff5cad;
+  background: rgba(255, 92, 173, 0.3);
+  color: var(--link-color);
+  border-radius: 30px;
 }
-.nav-link 
+.nav-link {
+  transition: .3s;
+  border-radius: 30px;
+}
 html {
   --bck-color: #fafafa;
   --ft-color: #212121;
@@ -159,6 +165,7 @@ h2 {
   color: #ff5cad;
   font-size: 80px;
 }
+/* Sign in box */
 * {
 	box-sizing: border-box;
 	margin: 0;
