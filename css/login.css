@@ -22,6 +22,20 @@
   width: 100%;
   height: 100%;
 }
+h4 {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -10%);
+	font-size: 30px;	
+}
+h5 {
+	position: absolute;
+	top: 68%;
+	left: 50%;
+	transform: translate(-50%, -10%);
+	font-size: 20px;
+}
 spinner-wrapper {
 	position: fixed;
 	z-index: 999999;
@@ -213,12 +227,12 @@ h2 {
 	padding: 1rem;
 }
 
-.container h4{
+.container h3{
 	color: var(--link-color);
 	font-size: 2rem;
 }
 
-.container h4 i{
+.container h3 i{
 	font-size: 1.8rem;
 	padding-left: .1rem;
 }
