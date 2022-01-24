@@ -110,7 +110,7 @@
 		 <a href="#" class="forgot-password-link">
 			 Forgot Password?
 		 </a>
-		 <button>Sign in</button>
+		 <button onclick="signin()">Sign in</button>
 		 <p class="join-link">
 			 New to twwixl?
 			 <a href="signin.html" class="join-now">
@@ -139,5 +139,28 @@
 <div class="footer">
     <p>&copy; 2022 twwixl, All rights reserved.</p>
 </div>
+<script>
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCM_wczXytPFQaRjreuRCc4-aD5y-hRhmo",
+  authDomain: "twwixl.firebaseapp.com",
+  projectId: "twwixl",
+  storageBucket: "twwixl.appspot.com",
+  messagingSenderId: "950679915961",
+  appId: "1:950679915961:web:8bf4a2df41c4d971ab3a68",
+  measurementId: "G-18HC1BP36E"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
