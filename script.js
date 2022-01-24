@@ -51,8 +51,8 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+// Fire base sign in
 function signin(){
- var userEmail = document.documentElementById("email").value;
- var userPass = document.documentElementById("password").value;
- window.alert(userEmail+ "" + userPass)
+  window.alert("Still under development");
 }
