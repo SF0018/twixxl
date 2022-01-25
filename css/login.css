@@ -1,8 +1,8 @@
 /* Selection/Highlight Colour */
 ::selection {
-    background-color: #b3d4fc;
-    color: #000000;
+    background-color: #ff5cad;
     text-shadow: none;
+	color: var(--ft-color);
 }
 :root {
   color-scheme: light;
@@ -61,7 +61,7 @@ spinner-wrapper {
 	width: 1rem;
 	height: 1rem;
 	border-radius: 100%;
-	background-color: #ff5cad;
+	background-color: var(--ft-color);
 	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }
