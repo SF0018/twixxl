@@ -1,9 +1,4 @@
-/* Selection/Highlight Colour */
-::selection {
-    background-color: #ff5cad;
-    text-shadow: none;
-	color: var(--ft-color);
-}
+
 :root {
   color-scheme: light;
 }
