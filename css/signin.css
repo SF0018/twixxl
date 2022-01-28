@@ -144,6 +144,11 @@ header {
     background-color: #ff5cad;
     border-radius: 30px;
 }
+.nav-link.active:hover {
+	background: transparent;
+    border: 2px solid #ff5cad;
+	color: var(--link-color);
+}
 .nav-link:hover{
   background: rgba(255, 92, 173, 0.3);
   color: var(--link-color);
@@ -179,7 +184,7 @@ a:active {
 fas fa-moon  {
   position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: 100;
   width: 100%;
   text-align: center;
 }
@@ -306,11 +311,11 @@ button {
 }
 button:hover {
 	height: 50px;
-	background: #ff5cad;
+	background: transparent;
+    border: 2px solid #ff5cad;
 	outline: none;
-	border: none;
 	border-radius: 30px;
-	color: #fff;
+	color: var(--link-color);
 	font-size: 1rem;
 	font-weight: bolder;
   opacity: 0.9;
@@ -344,8 +349,7 @@ color: var(--link-color);
   margin-left: 450px;
   margin-right: 0px;
   margin-top: 10px;
-  width: 50%;
-  height: 500px;
+  width: 100px;
   }
   
   #myImg:hover {opacity: 0.7;}
