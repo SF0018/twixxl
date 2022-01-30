@@ -1,4 +1,7 @@
-
+::selection {
+	background-color: var(--ft-color);
+	color: var(--bck-color);
+}
 :root {
     color-scheme: light;
   }
