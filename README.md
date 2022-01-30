@@ -1,5 +1,5 @@
 # twwixl
- Twwixl a website where you can connect with your friends and family.
+ twwixl a website where you can connect with your friends and family.
  # Preveiw's
   - Dark mode
 ![Preveiw 1](https://user-images.githubusercontent.com/82166240/151675915-7921aa41-fa0a-4876-9224-35fda02efe61.JPG)
