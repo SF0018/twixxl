@@ -383,5 +383,5 @@ color: var(--link-color);
 	text-align: center;
 	margin-top: 330px;
 	font-size: 40px;
-	color: #fafafa;
+	color: var(--ft-color);
   }
