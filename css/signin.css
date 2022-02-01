@@ -388,10 +388,11 @@ color: var(--link-color);
   @media all and (max-width: 500px) {
 	h1 {
 		position: absolute;
-		top: 8%;
+		top: 5%;
 		left: 50%;
 		transform: translate(-50%, -10%);
-		font-size: 30px;
+		padding: 30px;
+		font-size: 32px;
 	  }
 	  h2 {
 		position: absolute;
@@ -399,25 +400,25 @@ color: var(--link-color);
 		left: 50%;
 		transform: translate(-50%, -10%);
 		color: #ff5cad;
-		font-size: 50px;
+		font-size: 60px;
 	  }
 	  .countdown {
 		position: fixed;
 		left: 0;
-		bottom: 5;
+		bottom: 0;
 		width: 100%;
+		padding: 50px;
 		text-align: center;
-		margin-top: 680px;
 		font-size: 40px;
 		color: #ff5cad;
 	  }
 	  .textabove {
 		position: fixed;
 		left: 0;
-		bottom: 5;
+		bottom: 0;
 		width: 100%;
+		padding: 100px;
 		text-align: center;
-		margin-top: 620px;
 		font-size: 40px;
 		color: var(--ft-color);
 	  }
@@ -427,7 +428,7 @@ color: var(--link-color);
 		background-color: var(--link-color);
 		box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);
 		position: absolute;
-		top: 45%;
+		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		border-radius: 7px;
@@ -436,5 +437,4 @@ color: var(--link-color);
 		justify-content: space-evenly;
 		padding: 1rem;
 	}
-	
   }
