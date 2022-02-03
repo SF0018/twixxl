@@ -1,3 +1,4 @@
+// Dark mode & Light mode
 const DARK_MODE = 'dark';
 const LIGHT_MODE = 'light';
 const THEME = 'mode';
@@ -16,7 +17,6 @@ document.addEventListener(
     }
   }
 );
-
 function applyTheme() {
   let html = document.documentElement;
   let currentMode = localStorage.getItem(THEME);
@@ -31,28 +31,19 @@ function applyTheme() {
       '<i class="fas fa-moon"></i>';
   }
 }
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+// End of Dark mode & Light mode
 
 // Fire base sign in
 function signin(){
   window.alert("Still under development");
 }
+// Nav bar
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+// End of Nav bar
