@@ -449,3 +449,62 @@ color: var(--link-color);
 		padding: 1rem;
 	}
   }
+  .discord {
+    height: 50px;
+    width: 250px;
+    background: transparent;
+    border: 2px solid #ff5cad;
+    outline: none;
+    border-radius: 30px;
+    color: var(--link-color);
+    font-size: 1rem;
+    font-weight: bolder;
+    opacity: 0.9;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+.discord:hover {
+  background: #ff5cad;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bolder;
+  opacity: 1;
+}
+.google {
+    height: 50px;
+    width: 250px;
+    background: transparent;
+    border: 2px solid #ff5cad;
+    outline: none;
+    border-radius: 30px;
+    color: var(--link-color);
+    font-size: 1rem;
+    font-weight: bolder;
+    opacity: 0.9;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+.google:hover {
+    background: #ff5cad;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bolder;
+    opacity: 1;
+}
+h7 {
+    position: absolute;
+    top: 77%;
+    left: 10%;
+    transform: translate(-50%, -10%);
+    font-size: 30px;
+  }

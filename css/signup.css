@@ -383,8 +383,6 @@ color: var(--link-color);
     transform: translate(-50%, -50%);
 }
 .discord:hover {
-  height: 50px;
-  width: 250px;
   background: #ff5cad;
   outline: none;
   border: none;
@@ -411,8 +409,6 @@ color: var(--link-color);
     transform: translate(-50%, -50%);
 }
 .google:hover {
-    height: 50px;
-    width: 250px;
     background: #ff5cad;
     outline: none;
     border: none;
@@ -452,4 +448,78 @@ color: var(--link-color);
       padding: .2rem;
       font-size: 12px;
     }
+    @media all and (max-width: 600px) {
   
+        .container {
+        width: 320px;
+        height: 440px;
+        background-color: var(--link-color);
+        box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 1rem;
+      }
+      .container h3{
+        color: var(--link-color);
+        font-size: 1.5rem;
+    }
+    .google {
+      height: 35px;
+      width: 250px;
+      background: transparent;
+      border: 2px solid #ff5cad;
+      outline: none;
+      border-radius: 30px;
+      color: var(--link-color);
+      font-size: 1rem;
+      font-weight: bolder;
+      opacity: 0.9;
+      position: absolute;
+      top: 79%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  .discord {
+    height: 35px;
+    width: 250px;
+    background: transparent;
+    border: 2px solid #ff5cad;
+    outline: none;
+    border-radius: 30px;
+    color: var(--link-color);
+    font-size: 1rem;
+    font-weight: bolder;
+    opacity: 0.9;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  h1 {
+    top: 83%;
+    left: 50%;
+    font-size: 15px;
+  }
+  .join-link {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--link-color);
+    font-size: 0.9rem;
+    }
+    
+    .join-now{
+        text-decoration: none;
+        font-weight: bolder;
+        color: #ff5cad;
+        border-radius: 12px;
+        transition: .3s;
+        font-weight: bolder;
+        padding: .2rem;
+    }
+}

@@ -28,6 +28,36 @@
 	<!-- Website title -->
 	<title>Signup Page | twwixl</title>
 	<!-- End of website title -->
+	<!-- Firebase-->
+	<script>
+		// Import the functions you need from the SDKs you need
+	import { initializeApp } from "firebase/app";
+	import { getAnalytics } from "firebase/analytics";
+	import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+	import { getFirestore } from "firebase/firestore";
+
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	const firebaseConfig = {
+	  apiKey: "AIzaSyCM_wczXytPFQaRjreuRCc4-aD5y-hRhmo",
+	  authDomain: "twwixl.firebaseapp.com",
+	  databaseURL: "https://twwixl-default-rtdb.firebaseio.com",
+	  projectId: "twwixl",
+	  storageBucket: "twwixl.appspot.com",
+	  messagingSenderId: "950679915961",
+	  appId: "1:950679915961:web:d55e0e20048d3558ab3a68",
+	  measurementId: "G-8BVHWELT88"
+	};
+	
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+	const analytics = getAnalytics(app);
+	</script>
+	<script src="app.js" defer></script>
+	<!-- End of Firebase-->
 	<!-- Text -->
 	<h1>Welcome to,</h1>
 	<h2>twwixl</h2>
@@ -142,7 +172,38 @@
 		 </p>
 	 </div>
 	   </form>
+	   <button class="google"><i class="fab fa-google"></i> Google</button>
+       <h7>OR</h7>
+       <button class="discord"><i class="fab fa-discord"></i> Discord</button>
 	   <!--  End of Sign in -->
+	   <section id="whenSignedOut">
+
+		<button id="signInBtn" class="btn btn-primary">Sign in with Google</button>
+	
+	  </section>
+	
+	  <section id="whenSignedIn" hidden="true">
+	
+		<div id="userDetails"></div>
+	
+		<button id="signOutBtn" class="btn btn-primary">Sign Out</button>
+	
+	  </section>
+	
+	  <hr>
+	
+	  <section>
+	
+		<h8>My Firestore Things</h8>
+	
+		<ul id="thingsList">
+	
+		</ul>
+	
+		<button id="createThing" class="btn btn-success">Create Random Thing</button>
+	
+	  </section>
+	
 	<!-- CSS Import -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
