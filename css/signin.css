@@ -1,7 +1,7 @@
 /* UI */
 ::selection {
-	background-color: var(--ft-color);
-	color: var(--bck-color);
+	background-color: #ff5cad;
+	color: #fafafa;	
 }
 :root {
   color-scheme: light;
@@ -126,7 +126,7 @@ header {
     float: right;
   }
   .footer {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -377,7 +377,7 @@ color: var(--link-color);
 	background: rgba(255, 92, 173, 0.3);
 }
 .countdown {
-	position: fixed;
+	position: absolute;
 	left: 0;
 	bottom: 5;
 	width: 100%;
@@ -387,7 +387,7 @@ color: var(--link-color);
 	color: #ff5cad;
   }
   .textabove {
-	position: fixed;
+	position: absolute;
 	left: 0;
 	bottom: 5;
 	width: 100%;
@@ -395,59 +395,6 @@ color: var(--link-color);
 	margin-top: 330px;
 	font-size: 40px;
 	color: var(--ft-color);
-  }
-  @media all and (max-width: 600px) {
-	h1 {
-		position: absolute;
-		top: 5%;
-		left: 50%;
-		transform: translate(-50%, -10%);
-		padding: 30px;
-		font-size: 22px;
-	  }
-	  h2 {
-		position: absolute;
-		top: 12%;
-		left: 50%;
-		transform: translate(-50%, -10%);
-		color: #ff5cad;
-		font-size: 40px;
-	  }
-	  .countdown {
-		position: fixed;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		padding: 30px;
-		text-align: center;
-		font-size: 20px;
-		color: #ff5cad;
-	  }
-	  .textabove {
-		position: fixed;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		padding: 60px;
-		text-align: center;
-		font-size: 20px;
-		color: var(--ft-color);
-	  }
-	  .container {
-		width: 320px;
-		height: 380px;
-		background-color: var(--link-color);
-		box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		border-radius: 7px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		padding: 1rem;
-	}
   }
   .discord {
     height: 50px;
@@ -501,6 +448,13 @@ color: var(--link-color);
     font-weight: bolder;
     opacity: 1;
 }
+.lightanddark {
+	position: absolute;
+    top: 8%;
+    left: 98%;
+	
+    transform: translate(-50%, -10%);
+}
 h7 {
     position: absolute;
     top: 77%;
@@ -508,3 +462,90 @@ h7 {
     transform: translate(-50%, -10%);
     font-size: 30px;
   }
+  @media all and (max-width: 600px) {
+	h1 {
+		position: absolute;
+		top: 5%;
+		left: 50%;
+		transform: translate(-50%, -10%);
+		padding: 30px;
+		font-size: 22px;
+	  }
+	  h2 {
+		position: absolute;
+		top: 12%;
+		left: 50%;
+		transform: translate(-50%, -10%);
+		color: #ff5cad;
+		font-size: 40px;
+	  }
+	  .countdown {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		padding: 30px;
+		text-align: center;
+		font-size: 20px;
+		color: #ff5cad;
+	  }
+	  .textabove {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		padding: 60px;
+		text-align: center;
+		font-size: 20px;
+		color: var(--ft-color);
+	  }
+	  .container {
+		width: 320px;
+		height: 380px;
+		background-color: var(--link-color);
+		box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 7px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		padding: 1rem;
+	}
+	.google {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	h7 {
+		position: absolute;
+		top: 108%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.discord {
+		position: absolute;
+		top: 116%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.footer {
+		position: absolute;
+		left: 0;
+		top: 124%;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+	  }
+	  .lightanddark {
+		position: absolute;
+		top: 10%;
+		left: 95%;
+		
+		transform: translate(-50%, -10%);
+	}
+  }
+  

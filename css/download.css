@@ -1,6 +1,6 @@
 ::selection {
-	background-color: var(--ft-color);
-	color: var(--bck-color);
+	background-color: #ff5cad;
+	color: #fafafa;	
 }
 :root {
   color-scheme: light;
