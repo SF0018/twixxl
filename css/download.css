@@ -153,11 +153,19 @@ header {
       opacity: 0.9;
       
     }
-  
+    .lightanddark {
+      position: absolute;
+        top: 1%;
+        left: 98%;
+        transform: translate(-50%, -10%);
+    }
   /* Float the link section to the right */
   .topnav {
-    float: right;
-  }
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    }
   .footer {
     position: fixed;
     left: 0;
@@ -272,3 +280,76 @@ h2 {
   color: #ff5cad;
   font-size: 80px;
 }
+button {
+	height: 50px;
+	background: #ff5cad;
+	outline: none;
+	border: none;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: bolder;
+  opacity: 1;
+}
+button:hover {
+	height: 50px;
+	background: transparent;
+    border: 2px solid #ff5cad;
+	outline: none;
+	border-radius: 30px;
+	color: var(--link-color);
+	font-size: 1rem;
+	font-weight: bolder;
+  opacity: 0.9;
+}
+
+.windows {
+  height: 50px;
+  width: 250px;
+   outline: none;
+   border-radius: 30px;
+   color: var(--link-color);
+   font-size: 1rem;
+   font-weight: bolder;
+   opacity: 0.9;
+   position: absolute;
+   top: 45%;
+   left: 35%;
+   transform: translate(-50%, -50%);
+}
+.mac {
+ height: 50px;
+width: 250px;
+ outline: none;
+ border-radius: 30px;
+ color: var(--link-color);
+ font-size: 1rem;
+ font-weight: bolder;
+ opacity: 0.9;
+ position: absolute;
+ top: 45%;
+ left: 55%;
+ transform: translate(-50%, -50%);
+}
+.linux {
+  height: 50px;
+ width: 250px;
+  outline: none;
+  border-radius: 30px;
+  color: var(--link-color);
+  font-size: 1rem;
+  font-weight: bolder;
+  opacity: 0.9;
+  position: absolute;
+  top: 45%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+ }
+ h3 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+ }
+
