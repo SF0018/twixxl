@@ -179,17 +179,24 @@ header {
       display: block;
       color: var(--ft-color);
       border-radius: 30px;
+	  
     }
   }
   
   @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {position: relative;
+		top: 30; left: 10; 
+        height: 100vh;
+		background: var(--bck-color);
+	}
     .topnav.responsive .icon {
       position: absolute;
       right: 0;
-      top: 0;
+      top: 10;
 	  background-color: var(--ft-color);
 	  color: var(--bck-color);
+	  
+	  
     }
 	
     .topnav.responsive a {
@@ -197,6 +204,7 @@ header {
       display: block;
       text-align: center;
        padding: 5px 16px;
+	   
     }
   }
 /* End of Navbar */
