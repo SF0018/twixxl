@@ -16,8 +16,8 @@
 /* End of UI */
 /* Preloader */
 .loader_bg{
-  position: fixed;
-  top: 0; left: 0; z-index: 9999;
+  position:absolute;
+  top: 0; left: 0; z-index: 100;
   width: 100vw; height: 100vh;
   background: var(--bck-color);
 }
