@@ -2,8 +2,8 @@
  twwixl a website where you can connect with your friends and family.
  # Preveiw's
   - Dark mode
-![Preveiw 1](https://user-images.githubusercontent.com/82166240/151675915-7921aa41-fa0a-4876-9224-35fda02efe61.JPG)
-![Preveiw 3](https://user-images.githubusercontent.com/82166240/151675921-29f46865-abf8-49b5-814b-d5e6f02ae79e.JPG)
+![Preveiw 1](https://user-images.githubusercontent.com/82166240/157083445-dd726984-6229-4ef1-b15d-5a890267156e.JPG)
+![Preveiw 3](https://user-images.githubusercontent.com/82166240/157083467-aff2bb9b-81e6-4b80-9f7c-ca54ccfaf4a7.JPG)
   - Light mode
-![Preveiw 2](https://user-images.githubusercontent.com/82166240/151675928-4c4cae13-1986-4533-a396-8c3dc9c509ac.JPG)
-![Preview 4](https://user-images.githubusercontent.com/82166240/151675931-31ca503a-c9e1-4899-857b-d50a618ec51f.JPG)
+![Preveiw 2](https://user-images.githubusercontent.com/82166240/157083606-6a0d70ff-0ec0-41b2-8bfb-324bdf92bd86.JPG)
+![Preview 4](https://user-images.githubusercontent.com/82166240/157083619-e6a9dc01-105c-40a5-acd7-309bc6ac2ce4.JPG)
