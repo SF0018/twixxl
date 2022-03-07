@@ -48,3 +48,8 @@ function myFunction() {
 }
 // End of Nav bar
 
+// Footer
+ src="//code.jquery.com/jquery-1.10.2.js"> 
+$(function(){  $("#footer").load("footer.html");});
+// End of footer
+
