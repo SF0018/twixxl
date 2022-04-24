@@ -1739,18 +1739,18 @@ form a:hover{
 .modal h3 {
   color: #4f515b;
   position: absolute;
-	top: 32%;
+	top: 38%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-  font-size: 20px;
+  font-size: 18px;
 }
 .modal p {
   color: #4f515b;
   position: absolute;
-	top: 40%;
+	top: 43%;
 	left: 170px;
 	transform: translate(-50%, -50%);
-  font-size: 12px;
+  font-size: 10px;
 } 
 .modal img {
   position: absolute;
