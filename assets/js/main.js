@@ -230,7 +230,7 @@ if (userAgent.includes('iPhone')) {
 
 if (userAgent.includes('Android')) {
   osDetails.name = 'Android';
-  osDetails.icon = 'bi-google';
+  osDetails.icon = 'bi-android';
 }
 updateOsDownloadButton(osDetails);
 
