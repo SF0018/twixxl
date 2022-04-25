@@ -205,7 +205,7 @@
 let userAgent = navigator.appVersion;
 let osDetails = {
   name: 'Unknown OS',
-  icon: 'fa-question-circle'
+  icon: 'bi-question-circle'
 };
 
 if (userAgent.includes('Macintosh')) {
@@ -230,7 +230,7 @@ if (userAgent.includes('iPhone')) {
 
 if (userAgent.includes('Android')) {
   osDetails.name = 'Android';
-  osDetails.icon = 'bi-android';
+  osDetails.icon = 'bi-google';
 }
 updateOsDownloadButton(osDetails);
 
