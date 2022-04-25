@@ -68,16 +68,13 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   background: #141518;
 }
-#preloader .img {
-  align-items: center;
-}
 #preloader:before {
   content: "";
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #141518;
-  border-top-color: #d2f9eb;
+  border: 6px solid ;
+  border-image: linear-gradient(170deg,#8224e3, #ed1e79);;
   border-radius: 50%;
   width: 60px;
   height: 60px;
