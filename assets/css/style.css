@@ -68,7 +68,9 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   background: #141518;
 }
-
+#preloader .img {
+  align-items: center;
+}
 #preloader:before {
   content: "";
   position: fixed;
@@ -216,7 +218,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: 3px;
   left: 30px;
-  background-color: linear-gradient(170deg,#8224e3, #ed1e79);;
+  background: linear-gradient(170deg,#8224e3, #ed1e79);;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
