@@ -210,32 +210,32 @@ let osDetails = {
 
 if (userAgent.includes('Macintosh')) {
   osDetails.name = 'Mac';
-  osDetails.icon = 'fa-apple';
+  osDetails.icon = 'bi-apple';
 }
 
 if (userAgent.includes('Windows')) {
   osDetails.name = 'Windows';
-  osDetails.icon = 'fa-windows';
+  osDetails.icon = 'bi-windows';
 }
 
 if (userAgent.includes('Linux')) {
   osDetails.name = 'Linux';
-  osDetails.icon = 'fa-linux';
+  osDetails.icon = 'bi-linux';
 }
 
 if (userAgent.includes('iPhone')) {
   osDetails.name = 'iPhone';
-  osDetails.icon = 'fa-apple';
+  osDetails.icon = 'bi-apple';
 }
 
 if (userAgent.includes('Android')) {
   osDetails.name = 'Android';
-  osDetails.icon = 'fa-android';
+  osDetails.icon = 'bi-android';
 }
 updateOsDownloadButton(osDetails);
 
 
 function updateOsDownloadButton(osDetails) {
-  let iconHtml = '<i class="icon fab ' + osDetails.icon + '"></i>'
-  document.querySelector('.btn-download-os').innerHTML = 'Download for ' + osDetails.name + iconHtml
+  let iconHtml = '<i class="icon bi ' + osDetails.icon + '"></i>'
+  document.querySelector('.btn-download-os').innerHTML = iconHtml + ' Download for ' + osDetails.name
 }
