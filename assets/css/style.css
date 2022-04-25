@@ -1115,7 +1115,10 @@ section {
   color: #000000;
 }
 .team .member .social a:hover {
-  color: linear-gradient(75deg,#8224e3, #ed1e79);;
+  background-image: linear-gradient( 75deg,#8224e3,#ed1e79);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .team .member .social i {
   font-size: 16px;
