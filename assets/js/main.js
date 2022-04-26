@@ -210,27 +210,27 @@ let osDetails = {
 
 if (userAgent.includes('Macintosh')) {
   osDetails.name = 'Mac';
-  osDetails.icon = 'bi-apple';
+  osDetails.icon = 'bi-download';
 }
 
 if (userAgent.includes('Windows')) {
   osDetails.name = 'Windows';
-  osDetails.icon = 'bi-windows';
+  osDetails.icon = 'bi-download';
 }
 
 if (userAgent.includes('Linux')) {
   osDetails.name = 'Linux';
-  osDetails.icon = 'bi-linux';
+  osDetails.icon = 'bi-download';
 }
 
 if (userAgent.includes('iPhone')) {
   osDetails.name = 'iPhone';
-  osDetails.icon = 'bi-apple';
+  osDetails.icon = 'bi-download';
 }
 
 if (userAgent.includes('Android')) {
   osDetails.name = 'Android';
-  osDetails.icon = 'bi-android';
+  osDetails.icon = 'bi-download';
 }
 updateOsDownloadButton(osDetails);
 
