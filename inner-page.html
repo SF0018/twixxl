@@ -8,17 +8,17 @@
 <meta name="theme-color" content="#8224e3">
 <meta charset="UTF-8">
 <meta name="viewport" content="">
-<meta name="description" content="twixxl a website where you can connect with your friends and family.">
+<meta name="description" content="Your platform to meet the world and everyone in between.">
 <meta name="keywords" content="twixxl">
 <meta property="og:title" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:description" content="twixxl a website where you can connect with your friends and family." />
+<meta property="og:description" content="Your platform to meet the world and everyone in between." />
 <meta property="og:site_name" content="twixxl.pages.dev">  
 <meta itemprop="name" content="">  
   <meta property="og:image" content="https://imgur.com/i9PGame.png"/>
 <meta itemprop="description" content="">  
   <meta name="twitter:title" content="twixxl">  
-  <meta name="twitter:description" content="twixxl a website where you can connect with your friends and family.">  
+  <meta name="twitter:description" content="Your platform to meet the world and everyone in between.">  
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
   <meta charset="web-link" />
 <link rel="icon" href="assets/img/New_twixxl Logo_Rounded.svg">
