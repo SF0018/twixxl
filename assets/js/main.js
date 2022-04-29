@@ -202,6 +202,9 @@
 
 })()
 
+ /**
+   * Download button
+   */
 let userAgent = navigator.appVersion;
 let osDetails = {
   name: 'Unknown OS',
@@ -239,3 +242,9 @@ function updateOsDownloadButton(osDetails) {
   let iconHtml = '<i class="icon bi ' + osDetails.icon + '"></i>'
   document.querySelector('.btn-download-os').innerHTML = iconHtml + ' Download for ' + osDetails.name
 }
+
+ /**
+   * Counter
+   */
+
+  
