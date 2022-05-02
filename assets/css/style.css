@@ -45,7 +45,7 @@ label {
 	width: 52px;
 	height: 27px;
 	background: grey;
-  left: 30%;
+  float: left;
 	border-radius: 100px;
 	position: relative;
 }
@@ -85,13 +85,19 @@ html.transition *:after {
 html[data-theme='dark'] {
   --bg: #141518;
   --bg-panel: #000000;
-  --color-headings: #3694FF;
+  --color-headings: linear-gradient(170deg,#8224e3, #ed1e79);
   --color-text: #fafafa;
 }
 html[data-theme='light'] {
   --bg: #fff;
   --bg-panel: #f5f5f5;
-  --color-headings: #3694FF;
+  --color-headings: linear-gradient(170deg,#8224e3, #ed1e79);
+  --color-text: #000;
+}
+html {
+  --bg: #fff;
+  --bg-panel: #f5f5f5;
+  --color-headings: linear-gradient(170deg,#8224e3, #ed1e79);
   --color-text: #000;
 }
 body {
@@ -1044,7 +1050,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: #141518
+  background: var(--bg-panel);
 }
 .testimonials .section-header {
   margin-bottom: 40px;
@@ -1054,7 +1060,7 @@ section {
 }
 .testimonials .testimonial-item {
   text-align: center;
-  color: #fff;
+  color: var(--color-text);
 }
 .testimonials .testimonial-item .testimonial-img {
   width: 100px;
@@ -1066,11 +1072,11 @@ section {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #fff;
+  color: var(--color-text);
 }
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #ddd;
+  color: var(--color-text);
   margin: 0 0 15px 0;
 }
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
@@ -1094,7 +1100,7 @@ section {
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
-  color: #eee;
+  color: var(--color-text);
 }
 .testimonials .swiper-pagination {
   margin-top: 20px;
@@ -1146,10 +1152,10 @@ section {
   bottom: -80px;
   left: 0px;
   right: 0px;
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--bg-panel);
   padding: 15px 0;
   border-radius: 0 0 12px 12px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px var(--bg-panel);
 }
 .team .member h4 {
   font-weight: 700;
@@ -1176,14 +1182,14 @@ section {
   font-style: italic;
   display: block;
   font-size: 13px;
-  color: #000000;
+  color: var(--color-text);
 }
 .team .member .social {
   margin-top: 10px;
 }
 .team .member .social a {
   transition: color 0.3s;
-  color: #000000;
+  color: var(--color-text);
 }
 .team .member .social a:hover {
   background-image: linear-gradient( 170deg,#8224e3,#ed1e79);
@@ -1204,9 +1210,9 @@ section {
 }
 .pricing .box {
   padding: 20px;
-  background: #fff;
+  background: var(--bg);
   text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 4px var(--bg-panel);
   border-radius: 12px;
   position: relative;
   overflow: hidden;
@@ -1217,12 +1223,12 @@ section {
   padding: 20px 15px;
   font-size: 16px;
   font-weight: 600;
-  color: #777777;
-  background: #f8f8f8;
+  color: var(--color-text);
+  background: var(--bg-panel);
 }
 .pricing h4 {
   font-size: 36px;
-  color: linear-gradient(170deg,#8224e3, #ed1e79);;
+  color: var(--color-text);
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
@@ -1231,6 +1237,7 @@ section {
   font-size: 20px;
   top: -15px;
   left: -3px;
+  color: var(--color-text);
 }
 .pricing h4 span {
   color: #bababa;
@@ -1240,7 +1247,7 @@ section {
 .pricing ul {
   padding: 0;
   list-style: none;
-  color: #444444;
+  color: var(--color-text);
   text-align: center;
   line-height: 20px;
   font-size: 14px;
@@ -1260,7 +1267,7 @@ section {
 .pricing .btn-wrap {
   margin: 20px -20px -20px -20px;
   padding: 20px 15px;
-  background: #f8f8f8;
+  background: var(--bg-panel);
   text-align: center;
 }
 .pricing .btn-buy {
@@ -1651,7 +1658,7 @@ span.psw {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: var(--bg);
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   width: 350px;
   height: 480px; /* Could be more or less, depending on screen size */
@@ -1663,7 +1670,7 @@ span.psw {
   position: absolute;
   right: 25px;
   top: 0;
-  color: #000;
+  color: var(--color-text);
   font-size: 35px;
   font-weight: bold;
 }
@@ -1716,7 +1723,7 @@ form .option_div{
 .option_div span{
   margin-left: 5px;
   font-size: 16px;
-  color: #333;
+  color: var(--color-text);
 }
 .option_div .forget_div a{
   font-size: 16px;
@@ -1736,7 +1743,7 @@ form .option_div{
   -webkit-text-fill-color: transparent;
 }
 .sign_up {
-  color: black;
+  color: var(--color-text);
   position: absolute;
           top: 420px;
           left: 25%;
@@ -1744,7 +1751,7 @@ form .option_div{
 }
 .main_div{
   width: 365px;
-  background: #fff;
+  background: var(--bg);
   padding: 30px;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
@@ -1765,12 +1772,13 @@ form .input_box{
   height: 50px;
   width: 320px;
   outline: none;
-  border: 1px solid lightgrey;
+  border: 1px solid var(--bg);
   border-radius: 100px;
   padding-left: 55px;
   font-size: 17px;
   transition: all 0.3s ease;
-  background-color: #f7f7f7;
+  background-color: var(--bg-panel);
+  color: var(--color-text);
 }
 .input_box input:focus{
   border-width: 1px;
@@ -1779,10 +1787,10 @@ form .input_box{
 .input_box .icon{
   position: absolute;
   top: 65%;
-  left: 3px;
+  left: 1px;
   transform: translateY(-50%);
-  color: #000000;
-  background-color: white;
+  color: var(--color-text);
+  background-color: var(--bg);
   padding: 12px 14px;
     margin-right: 4px;
     border-radius: 50%;
@@ -1799,7 +1807,7 @@ form .option_div{
 .option_div span{
   margin-left: 5px;
   font-size: 16px;
-  color: #333;
+  color: var(--color-text);
 }
 .button input{
   padding-left: 0;
@@ -1826,7 +1834,7 @@ form a:hover{
   text-decoration: underline;
 }
 .modal h3 {
-  color: #4f515b;
+  color: var(--color-text);
   position: absolute;
 	top: 38%;
 	left: 50%;
@@ -1834,7 +1842,7 @@ form a:hover{
   font-size: 18px;
 }
 .modal p {
-  color: #4f515b;
+  color: var(--color-text);
   position: absolute;
 	top: 43%;
 	left: 175px;
