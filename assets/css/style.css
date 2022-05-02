@@ -33,6 +33,67 @@ body {
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 52px;
+	height: 27px;
+	background: grey;
+  left: 30%;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: linear-gradient(170deg,#8224e3, #ed1e79);;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 45px;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+html[data-theme='dark'] {
+  --bg: #141518;
+  --bg-panel: #000000;
+  --color-headings: #3694FF;
+  --color-text: #fafafa;
+}
+html[data-theme='light'] {
+  --bg: #fff;
+  --bg-panel: #f5f5f5;
+  --color-headings: #3694FF;
+  --color-text: #000;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #141518;
@@ -578,7 +639,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f5f5ff;
+  background-color: var(--bg-panel);
 }
 
 .section-title {
@@ -674,6 +735,8 @@ section {
 --------------------------------------------------------------*/
 .about {
   padding: 40px 0 0 0;
+  background-color: var(--bg);
+  color: var(--color-text);
 }
 .about .icon-boxes h3 {
   font-size: 28px;
@@ -694,12 +757,12 @@ section {
   justify-content: center;
   width: 64px;
   height: 64px;
-  border: 2px solid #000000;
+  border: 2px solid #141518;
   border-radius: 50px;
   transition: 0.5s;
 }
 .about .icon-box .icon i {
-  color: linear-gradient(170deg,#8224e3, #ed1e79);;
+  color: var(--color-text);
   font-size: 32px;
   opacity:0.90;
 }
@@ -709,7 +772,7 @@ section {
   border-color: #fff
 }
 .about .icon-box:hover .icon i {
-  color: #fff;
+ color: #fff
 }
 .about .icon-box .title {
   margin-left: 85px;
@@ -718,7 +781,7 @@ section {
   font-size: 18px;
 }
 .about .icon-box .title a {
-  color: #343a40;
+  color: var(--color-text);
   transition: 0.3s;
 }
 .about .icon-box .title a:hover {
@@ -827,11 +890,14 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+.features{
+  background-color: var(--bg);
+}
 .features .icon-box {
   display: flex;
   align-items: center;
   padding: 20px;
-  background: #f5f5ff;
+  background: var(--bg-panel);
   border-radius: 12px;
   transition: ease-in-out 0.3s;
 }
@@ -868,7 +934,7 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  background: #f5f5ff;
+  background: var(--bg-panel);
   padding: 70px 0 60px;
 }
 .counts .count-box {
@@ -876,7 +942,7 @@ section {
   width: 100%;
   position: relative;
   text-align: center;
-  background: #fff;
+  background: var(--bg);
   border-radius: 12px;
 }
 .counts .count-box i {
@@ -910,6 +976,7 @@ section {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  color: var(--color-text);
 }
 
 /*--------------------------------------------------------------
@@ -947,14 +1014,17 @@ section {
 --------------------------------------------------------------*/
 .gallery .gallery-item {
   overflow: hidden;
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
+  border-right: 3px solid var(--bg);
+  border-bottom: 3px solid var(--bg);
 }
 .gallery .gallery-item img {
   transition: all ease-in-out 0.4s;
 }
 .gallery .gallery-item:hover img {
   transform: scale(1.1);
+}
+.gallery {
+  background-color: var(--bg);
 }
 
 /*--------------------------------------------------------------
@@ -1054,7 +1124,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
+  background: var(--bg);
 }
 .team .member {
   text-align: center;
@@ -1129,6 +1199,9 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+.pricing {
+  background-color: var(--bg);
+}
 .pricing .box {
   padding: 20px;
   background: #fff;
@@ -1246,22 +1319,22 @@ section {
 --------------------------------------------------------------*/
 .faq .faq-list {
   padding: 0;
-  color: black;
+  color: var(--color-text);
 }
 .faq .faq-list ul {
   padding: 0;
   list-style: none;
-  color: black;
+  color: var(--color-text);
 }
 .faq .faq-list li + li {
   margin-top: 15px;
 }
 .faq .faq-list li {
   padding: 20px;
-  background: #fff;
+  background: var(--bg);
   border-radius: 12px;
   position: relative;
-  color: black;
+  color: var(--color-text);
 }
 .faq .faq-list a {
   display: block;
@@ -1289,7 +1362,7 @@ section {
   position: absolute;
   right: 0;
   top: 0;
-  color: #000;
+  color: var(--color-text);
 }
 .faq .faq-list p {
   margin-bottom: 0;
@@ -1299,21 +1372,21 @@ section {
   display: none;
 }
 .faq .faq-list a.collapsed {
-  color: #343a40;
+  color: var(--color-text)
 }
 .faq .faq-list a.collapsed:hover {
-  color: black;
+  color: var(--color-text)
 }
 .faq .faq-list a.collapsed .icon-show {
   display: inline-block;
-  color: #000;
+  color: var(--color-text)
 }
 .faq .faq-list a.collapsed .icon-close {
   display: none;
-  color: #000;
+  color: var(--color-text)
 }
 .faq-list a {
-  color: black;
+  color: var(--color-text)
 }
 @media (max-width: 1200px) {
   .faq .faq-list {
@@ -1324,6 +1397,9 @@ section {
 /*--------------------------------------------------------------
 # Download
 --------------------------------------------------------------*/
+.download {
+  background-color: var(--bg);
+}
 .btn-download-os {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
