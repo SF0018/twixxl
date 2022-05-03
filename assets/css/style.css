@@ -33,7 +33,7 @@ body {
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-input[type=checkbox]{
+.navbar input[type=checkbox]{
 	height: 0;
 	width: 0;
 	visibility: hidden;
@@ -300,7 +300,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: var(--bg);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 12px;
@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #000000;
+  color: var(--color-text);
 }
 .navbar .dropdown ul a i {
   font-size: 12px;
