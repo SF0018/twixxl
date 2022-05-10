@@ -83,7 +83,6 @@
               </li>
               <li><a href="#">Drop Down 2</a></li>
               <li><a href="#">Drop Down 3</a></li>
-              <li><input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label></li>
             </ul>
           </li>
         </ul>
@@ -124,7 +123,7 @@
         <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
       </g>
       <g class="wave3">
-        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+        <use xlink:href="#wave-path" x="50" y="9" fill="var(--bg)">
       </g>
     </svg>
 
@@ -661,7 +660,7 @@
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
                 <a href="#" class="tiktok"><i class="bx bxl-tiktok"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/SF0018/twixxl" class="linkedin"><i class="bx bxl-github"></i></a>
               </div>
             </div>
           </div>
@@ -694,8 +693,9 @@
             <form action="" method="post">
               <input type="email" name="email" placeholder="Email address"><input type="submit" value="Subscribe">
             </form>
-
           </div>
+          <div id="darkmode" class="darkmode-switch"><span>LIGHT </span><label class="switch">
+          <input type="checkbox" id="switch" name="theme" /><div></div></label><span> DARK</span></div>
 
         </div>
       </div>
@@ -729,7 +729,7 @@
 </body>
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php" method="post">
+  <form class="modal-content animate" action="/main.html" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" id="close-modal-button">&times;</span>
       <img src="/assets/img/twixxl_login_background.png" height="90" style="border-radius: 8px;" alt="">

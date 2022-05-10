@@ -33,24 +33,33 @@ body {
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-.navbar input[type=checkbox]{
+
+.darkmode-switch {
+    font-size: 15px;
+    letter-spacing: .2em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 4px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+.footer-top input[type=checkbox]{
 	height: 0;
 	width: 0;
 	visibility: hidden;
 }
 
-label {
+.darkmode-switch label {
 	cursor: pointer;
 	text-indent: -9999px;
 	width: 52px;
 	height: 27px;
 	background: grey;
-  float: left;
 	border-radius: 100px;
 	position: relative;
 }
 
-label:after {
+.darkmode-switch label:after {
 	content: '';
 	position: absolute;
 	top: 3px;
@@ -62,16 +71,16 @@ label:after {
 	transition: 0.3s;
 }
 
-input:checked + label {
+.darkmode-switch input:checked + label {
 	background: linear-gradient(170deg,#8224e3, #ed1e79);;
 }
 
-input:checked + label:after {
+.darkmode-switch input:checked + label:after {
 	left: calc(100% - 5px);
 	transform: translateX(-100%);
 }
 
-label:active:after {
+.darkmode-switch label:active:after {
 	width: 45px;
 }
 
@@ -763,7 +772,7 @@ section {
   justify-content: center;
   width: 64px;
   height: 64px;
-  border: 2px solid #141518;
+  border: 2px solid var(--color-text);
   border-radius: 50px;
   transition: 0.5s;
 }
@@ -775,7 +784,7 @@ section {
 .about .icon-box:hover .icon {
   opacity: 1;
   background: linear-gradient(170deg,#8224e3, #ed1e79);;
-  border-color: #fff
+  border-color: var(--bg)
 }
 .about .icon-box:hover .icon i {
  color: #fff
@@ -851,7 +860,7 @@ section {
   background: rgba(198, 16, 0, 0);
 }
 .about .play-btn:hover::after {
-  border-left: 15px solid #141518;
+  border-left: 15px solid var(--bg);
   transform: scale(20);
 }
 .about .play-btn:hover::before {
@@ -865,7 +874,7 @@ section {
   border: none;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
+  border-left: 15px solid var(--color-text);
   z-index: 200;
   -webkit-animation: none;
   animation: none;
