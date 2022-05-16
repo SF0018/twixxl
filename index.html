@@ -94,7 +94,10 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
-
+    <div class="alert" id="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      <strong>Warning!</strong> Still under development, Coming soon!
+    </div>
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -420,10 +423,10 @@
                 <h4>SF18</h4>
                 <span>CEO & Founder</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-globe2"></i></a>
+                  <a href=""><i class="bi bi-youtube"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-github"></i></a>
                 </div>
               </div>
             </div>
@@ -436,10 +439,10 @@
                 <h4>Ketsu</h4>
                 <span>Co-Founder</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-globe2"></i></a>
+                  <a href=""><i class="bi bi-youtube"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-github"></i></a>
                 </div>
               </div>
             </div>
@@ -447,15 +450,15 @@
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="member" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>IdleEndeavor</h4>
-                <span>Head of Design and UI</span>
+                <h4>User</h4>
+                <span>Spot available!</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-globe2"></i></a>
+                  <a href=""><i class="bi bi-youtube"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-github"></i></a>
                 </div>
               </div>
             </div>
@@ -468,10 +471,10 @@
                 <h4>User</h4>
                 <span>Spot available!</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-globe2"></i></a>
+                  <a href=""><i class="bi bi-youtube"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-github"></i></a>
                 </div>
               </div>
             </div>
@@ -505,7 +508,7 @@
                 <li class="na">Custom Badges</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+                <a onclick="comingsoon()" class="btn-buy">Buy Now</a>
               </div>
             </div>
           </div>
@@ -522,7 +525,7 @@
                 <li class="na">Custom Badges</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+                <a onclick="comingsoon()" class="btn-buy">Buy Now</a>
               </div>
             </div>
           </div>
@@ -539,7 +542,7 @@
                 <li class="na">Custom Badges</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+                <a onclick="comingsoon()" class="btn-buy">Buy Now</a>
               </div>
             </div>
           </div>
@@ -557,7 +560,7 @@
                 <li>Custom Badges</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+                <a onclick="comingsoon()" class="btn-buy">Buy Now</a>
               </div>
             </div>
           </div>
@@ -630,7 +633,7 @@
           <p>Ready to experience twixxl?</p>
         </div>
         <div class="container" data-aos="fade-up">
-          <a class="btn-download-os" href="">Detecting Operating System</a>
+          <a class="btn-download-os" onclick="comingsoon()">Detecting Operating System</a>
         </div>
 
         </div>
@@ -691,11 +694,13 @@
             <h4>Our Newsletter</h4>
             <p>Subscribe to our newsletter to get latest news/updates on twixxl.</p>
             <form action="" method="post">
-              <input type="email" name="email" placeholder="Email address"><input type="submit" value="Subscribe">
+              <input type="email" name="email" placeholder="Email address"><input type="submit" onclick="comingsoon()" value="Subscribe">
             </form>
           </div>
           <div id="darkmode" class="darkmode-switch"><span>LIGHT </span><label class="switch">
-          <input type="checkbox" id="switch" name="theme" /><div></div></label><span> DARK</span></div>
+            <input type="checkbox" id="checkBox" name="theme" >
+            <span class="slider"></span>
+          </label><span> DARK  <span class="recommended">Recommended</span></span></div>
 
         </div>
       </div>
@@ -713,6 +718,9 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader">
+    <img src="/assets/img/New_twixxl Logo_Rounded.svg" height="60" style=" position: fixed; top: 290px; left: 48%;" alt="">
+    <h1>Did you know?</h1>
+    <p>twixxl's birhtday is on 10th of january</p>
   </div>
 
   <!-- Vendor JS Files -->
@@ -729,47 +737,41 @@
 </body>
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/main.html" method="post">
+  <form class="modal-content animate">
     <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" id="close-modal-button">&times;</span>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Signup" id="close-modal-button">&times;</span>
       <img src="/assets/img/twixxl_login_background.png" height="90" style="border-radius: 8px;" alt="">
       <div> <img src="/assets/img/twixxl_User.jpg" height="70" style="border-radius: 100%;  position: absolute;
        top: 130px;
        left: 40%;
        transform: translateY(-50%); " alt="">
       <h3><strong>Welcome</strong></h3>
-      <p><strong>Your platform to meet the world and everyone in between.</strong></p>
+      <p>Become a twixxler to meet the world and everyone in between.</p>
       <div class="input_box" style="  position: absolute;
-      top: 230px;
+      top: 240px;
       left: 10px;
       transform: translateY(-50%);">
-        <input type="text" placeholder="Email or Username" required>
+        <input type="text" id="email" placeholder="Email" required>
+        <div class="icon"><i class="bi bi-envelope"></i></div>
+      </div>
+      <div class="input_box" style="  position: absolute;
+      top: 300px;
+      left: 10px;
+      transform: translateY(-50%);">
+        <input type="text" id="username" placeholder="Username" required>
         <div class="icon"><i class="bi bi-person"></i></div>
       </div>
-      <div class="input_box" style="  position: absolute;
-      top: 290px;
-      left: 10px;
-      transform: translateY(-50%);">
-        <input type="password" placeholder="Password" required>
-        <div class="icon"><i class="bi bi-key"></i></div>
-      </div>
       <div class="option_div">
-        <div class="check_box">
-          <input type="checkbox">
-          <span>Remember</span>
-      </div>
-      <div class="forget_div">
-        <a href="#">Forgot password?</a>
-      </div>
+        
     </div>
       <div class="input_box button" style="  position: absolute;
       top: 390px;
       left: 10px;
       transform: translateY(-50%);">
-        <input type="submit" value="Log into your account">
+        <input type="submit" id="logIn" value="Continue"> 
       </div>
       <div class="sign_up">
-        New to twixxl? <a href="#">Signup</a>
+        Already have a account? <a href="#">Login</a>
       </div>
   </form>
 </div>
@@ -790,6 +792,113 @@ document.querySelector("#open-modal-button").addEventListener('click', function(
 });
 document.querySelector("#close-modal-button").addEventListener('click', function() {
     document.querySelector("body").style.overflow = 'overlay';
+});
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+  import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-database.js";
+  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCDXj91Z7mxbbyxmHH-fqKZyeB0NCdx6Ec",
+    authDomain: "twixxl-62260.firebaseapp.com",
+    databaseURL: "https://twixxl-62260-default-rtdb.firebaseio.com",
+    projectId: "twixxl-62260",
+    storageBucket: "twixxl-62260.appspot.com",
+    messagingSenderId: "91276470040",
+    appId: "1:91276470040:web:dee4392cc869a1988ee06d"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+  const auth = getAuth();
+
+  logIn.addEventListener('click',(e)=> {
+
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var username = document.getElementById('username').value;
+
+
+    createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+
+    set(ref(database, 'users/' + user.uid),{
+      username: username ,
+      email: email
+    })
+    alert('User Created!')
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+
+    alert(errorMessage);
+    // ..
+  });
+  })
+  login.addEventListener('click',(e)=>{
+   var email = document.getElementById('email').value;
+   var password = document.getElementById('password').value;
+
+      signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+
+        const dt = new Date();
+         update(ref(database, 'users/' + user.uid),{
+          last_login: dt,
+        })
+
+         alert('User loged in!');
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+
+        alert(errorMessage);
+  });
+
+ });
+
+const user = auth.currentUser;
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+    const uid = user.uid;
+    //bla bla bla
+    // ...
+  } else {
+    // User is signed out
+    // ...
+    //bla bla bla
+  }
+});
+
+logout.addEventListener('click',(e)=>{
+
+   signOut(auth).then(() => {
+     // Sign-out successful.
+     alert('user loged out');
+   }).catch((error) => {
+     // An error happened.
+     const errorCode = error.code;
+     const errorMessage = error.message;
+
+        alert(errorMessage);
+   });
+
 });
 </script>
 </html>

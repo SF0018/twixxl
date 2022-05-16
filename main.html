@@ -27,7 +27,7 @@
 <link rel="icon" href="assets/img/New_twixxl Logo_Rounded.svg">
  <!-- End of Meta Tags -->
 <!-- Website title -->
-<title>twixxl</title>
+<title>twixxl - (@sf18)</title>
 <!-- End of website title -->
 
 <head>
@@ -63,11 +63,12 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><button class="btn-create"><span>Create</span></button></li>
-          <li class="dropdown"><a ><img src="/assets/img/SF18 avatar.jpg"  height="50" style=" width: 50px; border-radius: 50%; border: 6px solid rgba(255, 255, 255, 0.15); margin: 0 auto;"alt=""></i></a>
+          <li class="dropdown"><a ><img src="/assets/img/twixxl_User.jpg"  height="50" style=" width: 50px; border-radius: 50%; border: 6px solid rgba(255, 255, 255, 0.15); margin: 0 auto;"alt=""></i></a>
             <ul>
               <li><a href="#">Account</a></li>
               <li><a href="#">Status</a></li>
               <li><a href="#">Settings</a></li>
+              <li><a href="index.html" id="logout" >Logout</a></li>
             </ul>
           </li>
         </ul>
@@ -76,17 +77,19 @@
 
     </div>
   </header><!-- End Header -->
-
-  <div class="username_box">
-    <i class="bi bi-download"></i>
-    <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter">0</span>
-    <h1>Sheldonn Fernandes</h1>
-    <p>@SF18</p>
+<div class="side_menue" id="side_menue" >
+  <div class="username_box" data-aos="fade-up">
+    <img src="assets/img/twixxl_User.jpg"  height="44" style="   position: absolute;
+    top: 16px;
+    left: 20px; width: 44px; border-radius: 50%;"alt="">
+    <h1>twixxl developer</h1>
+    <p>@twixxl <img  src="/assets/img/verified.png" height="15" alt=""></p>
   </div>
-
+</div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader">
   </div>
+  
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -101,8 +104,8 @@
 
   <style>
       body {
-        background: #000;
-        color: #fff;
+        background: var(--bg-panel);
+        color: var(text);
       }
       .btn-create {
   font-family: "Montserrat", sans-serif;
@@ -131,9 +134,10 @@
       }
       #header.header-transparent {
         background-color: #141518;
+        color: var(--color-text);
       }
       #header {
-    height: 80px;
+    height: 70px;
     transition: all 0.5s;
     z-index: 997;
     transition: all 0.5s;
@@ -147,5 +151,49 @@
     color: rgb(0, 0, 0);
     float: none;
 }
+.verified {
+  
+  background-image: linear-gradient( 170deg,#8224e3,#ed1e79);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.side_menue {
+  background: var(--bg-panel);
+  padding: 70px 0 60px;
+}
+.side_menue > .username_box {
+  padding: 10px 0px 0px 0px;
+  width: 20%;
+  height: 75px;
+  position: relative;
+  text-align: center;
+  background: var(--bg);
+  border-radius: 12px;
+  margin-left: 130px;
+  margin-top: 30px;
+
+
+}
+.side_menue > .username_box p {
+  position: absolute;
+    top: 40px;
+    left: 78px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: var(--color-text);
+}
+.side_menue > .username_box h1 {
+  padding:  9px 0px 0px 10px;;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: var(--color-text);
+}
+#logout {
+  color: red;
+}
+
 
   </style>

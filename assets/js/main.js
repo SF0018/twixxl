@@ -262,6 +262,7 @@ checkbox.addEventListener('change', function() {
     }
 })
 
+
 let trans = () => {
     document.documentElement.classList.add('transition');
     window.setTimeout(() => {
@@ -270,4 +271,6 @@ let trans = () => {
 }
 
 
-  
+function comingsoon() {
+document.getElementById('alert').style.display = "block";
+}
