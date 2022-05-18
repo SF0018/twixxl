@@ -105,7 +105,7 @@
             <h1>Welcome to, <span>twixxl</span></h1>
             <h2>Your platform to meet the world and everyone in between.</h2>
             <div class="text-center text-lg-start">
-              <a class="btn-get-started scrollto" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="open-modal-button"><span>Get Started</span></a>
+              <a class="btn-get-started scrollto" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="open-modal-button"><span>Get Started</span> <i class="bi bi-box-arrow-up-right"></i></a>
             </div>
           </div>
         </div>
@@ -719,7 +719,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader">
     <img src="/assets/img/New_twixxl Logo_Rounded.svg" height="60" style=" position: fixed; top: 290px; left: 48%;" alt="">
-    <h1>Did you know?</h1>
+    <h1>DID YOU KNOW?</h1>
     <p>twixxl's birhtday is on 10th of january</p>
   </div>
 
@@ -823,7 +823,7 @@ document.querySelector("#close-modal-button").addEventListener('click', function
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
     var username = document.getElementById('username').value;
-
+    var username = document.getElementById('fullname').value;
 
     createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
