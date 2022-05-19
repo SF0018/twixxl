@@ -328,4 +328,3 @@ progress.addEventListener('click', (e) =>{
   const progressTime = (e.offsetX / progress.offsetWidth) * video.duration
   video.currentTime = progressTime
 })
-

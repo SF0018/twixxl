@@ -44,32 +44,6 @@ body {
   border-radius: 100px;
   letter-spacing: normal;
       }
-      html {
-        --bg: #fff;
-        --bg-panel: #f5f5f5;
-        --color-headings: linear-gradient(170deg,#8224e3, #ed1e79);
-        --color-text: #000;
-      
-      }
-      
-      html.dark {
-        --bg: #141518;
-        --bg-panel: #000000;
-        --color-headings: linear-gradient(170deg,#8224e3, #ed1e79);
-        --color-text: #fafafa;
-      }
-      a:link,
-      a:visited,
-      a:active {
-        color: var(--link-color);
-      }
-      fas fa-moon  {
-        position: fixed;
-        left: 0;
-        bottom: 100;
-        width: 100%;
-        text-align: center;
-      }
   /*SWITCH*/
   .switch {
     position: relative;
