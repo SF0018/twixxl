@@ -857,6 +857,7 @@ section {
   background: url("../img/about.png") center center no-repeat;
   background-size: contain;
   min-height: 300px;
+  border-radius: 12px;
 }
 .about .play-btn {
   width: 94px;
@@ -901,8 +902,8 @@ section {
   opacity: 1;
   border-radius: 50%;
   border: 5px solid rgba(255, 255, 255, 0.7);
-  top: -15%;
-  left: -15%;
+  top: -14%;
+  left: -13%;
   background: rgba(198, 16, 0, 0);
 }
 .about .play-btn:hover::after {
@@ -1633,18 +1634,23 @@ section {
   text-align: center;
   padding-top: 30px;
 }
+
 #footer .credits {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
   color: #fff;
 }
-#footer .credits a {
+#footer .credits a:hover {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
-  color: rgb(255, 0, 0);
+  background-image: linear-gradient( 170deg,#8224e3,#ed1e79);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 @media (max-width: 575px) {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
