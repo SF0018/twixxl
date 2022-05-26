@@ -44,32 +44,6 @@ body {
   border-radius: 100px;
   letter-spacing: normal;
       }
-      html {
-        --bg: #fff;
-        --bg-panel: #f5f5f5;
-        --color-headings: linear-gradient(170deg,#8224e3, #ed1e79);
-        --color-text: #000;
-      
-      }
-      
-      html.dark {
-        --bg: #141518;
-        --bg-panel: #000000;
-        --color-headings: linear-gradient(170deg,#8224e3, #ed1e79);
-        --color-text: #fafafa;
-      }
-      a:link,
-      a:visited,
-      a:active {
-        color: var(--link-color);
-      }
-      fas fa-moon  {
-        position: fixed;
-        left: 0;
-        bottom: 100;
-        width: 100%;
-        text-align: center;
-      }
   /*SWITCH*/
   .switch {
     position: relative;
@@ -154,18 +128,21 @@ html[data-theme='dark'] {
   --bg-panel: #000000;
   --color-headings: linear-gradient(170deg,#8224e3, #ed1e79);
   --color-text: #fafafa;
+  --hero: #000;
 }
 html[data-theme='light'] {
   --bg: #fff;
   --bg-panel: #f5f5f5;
   --color-headings: linear-gradient(170deg,#8224e3, #ed1e79);
   --color-text: #000;
+  --hero: #141518;
 }
 html {
   --bg: #fff;
   --bg-panel: #f5f5f5;
   --color-headings: linear-gradient(170deg,#8224e3, #ed1e79);
   --color-text: #000;
+  --hero: #141518;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -532,7 +509,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero:before {
   content: "";
-  background: #141518;
+  background: var(--hero);
   position: absolute;
   bottom: 0;
   top: 0;
