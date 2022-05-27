@@ -328,4 +328,12 @@ progress.addEventListener('click', (e) =>{
   const progressTime = (e.offsetX / progress.offsetWidth) * video.duration
   video.currentTime = progressTime
 })
+// Pre-loader
+const allMessages = ["twixxl's birthday is on 10th of january","twixxl is fully encrypted"]
+    
+function getRandomMessage() {
+    return allMessages[Math.floor(Math.random() * allMessages.length)];
+}
+
+document.getElementById("preloadermessages").innerHTML = `idk ${getRandomMessage()}`;
 
