@@ -745,7 +745,7 @@
 
 </body>
 <div id="id01" class="modal">
-  
+
   <form class="modal-content animate">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Signup" id="close-modal-button">&times;</span>
@@ -754,34 +754,37 @@
        top: 130px;
        left: 40%;
        transform: translateY(-50%); " alt="">
-      <h3><strong>Welcome</strong></h3>
-      <p>Become a twixxler to meet the world and everyone in between.</p>
-      <div class="input_box" style="  position: absolute;
-      top: 240px;
-      left: 10px;
-      transform: translateY(-50%);">
-        <input type="text" id="email" placeholder="Email" required>
-        <div class="icon"><i class="bi bi-envelope"></i></div>
-      </div>
-      <div class="input_box" style="  position: absolute;
-      top: 300px;
-      left: 10px;
-      transform: translateY(-50%);">
-        <input type="text" id="username" placeholder="Username" required>
-        <div class="icon"><i class="bi bi-person"></i></div>
-      </div>
-      <div class="option_div">
-        
-    </div>
-      <div class="input_box button" style="  position: absolute;
-      top: 390px;
-      left: 10px;
-      transform: translateY(-50%);">
-        <input href="index.html" type="submit" id="logIn" value="Continue"> 
-      </div>
-      <div class="sign_up">
-        Already have a account? <a href="#">Login</a>
-      </div>
+                  <div class="input_box" style="  position: absolute;
+                  top: 170px;
+                  left: 10px;
+                  transform: translateY(-50%);">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <div class="icon"><i class="bi bi-person"></i></div>
+                  </div>
+                  <div class="input_box" style="  position: absolute;
+                  top: 230px;
+                  left: 10px;
+                  transform: translateY(-50%);">
+                    <input type="text" id="email" placeholder="Email" required>
+                    <div class="icon"><i class="bi bi-envelope"></i></div>
+                  </div>
+                  <div class="input_box" style="  position: absolute;
+                  top: 290px;
+                  left: 10px;
+                  transform: translateY(-50%);">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <div class="icon"><i class="bi bi-key"></i></div>
+                  </div>
+                  <p style=" white-space: nowrap;font-size: 0.7em; margin-top: 41%; margin-left:-2%;">By creating an account you agree to our <a href="#" style="color:dodgerblue;">Terms & Privacy</a>.</p>
+                  <div class="input_box button" style="  position: absolute;
+                  top: 390px;
+                  left: 10px;
+                  transform: translateY(-50%);">
+                    <input type="submit" id="logIn" value="Signup">
+                  </div>
+                  <div class="sign_up">
+                    Already have a account? <a href="#">Login</a>
+                  </div>
   </form>
 </div>
 
@@ -793,7 +796,7 @@ var modal = document.getElementById('id01');
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-        document.querySelector("body").style.overflow = 'overlay';
+        document.querySelector("body").style.overflow = 'overlay';   
     }
 }
 document.querySelector("#open-modal-button").addEventListener('click', function() {
@@ -833,7 +836,7 @@ document.querySelector("#close-modal-button").addEventListener('click', function
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
     var username = document.getElementById('username').value;
-    var username = document.getElementById('fullname').value;
+
 
     createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {

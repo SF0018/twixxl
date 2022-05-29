@@ -3,6 +3,7 @@
 /* Gradient Scroll Bar */
 body {
   overflow: overlay;
+  filter: none;
 }
 /* width */
 ::-webkit-scrollbar {
