@@ -778,7 +778,7 @@
                     <input type="password" id="password" placeholder="Password" required>
                     <div class="icon"><i class="bi bi-key"></i></div>
                   </div>
-                  <p style=" white-space: nowrap;font-size: 0.7em; margin-top: 41%; margin-left:-2%;">By creating an account you agree to our <a href="#" style="color:dodgerblue;">Terms & Privacy</a>.</p>
+                  <p style=" white-space: nowrap;font-size: 0.7em; margin-top: 41%; margin-left:-2%;">By creating an account you agree to our <a href="terms.html" style="color:dodgerblue;">Terms & Privacy</a>.</p>
                   <div class="input_box button" style="  position: absolute;
                   top: 390px;
                   left: 10px;
@@ -791,6 +791,24 @@
   </form>
 </div>
 
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        document.querySelector("body").style.overflow = 'overlay';   
+    }
+}
+document.querySelector("#open-modal-button").addEventListener('click', function() {
+    document.querySelector("body").style.overflow = 'hidden';
+});
+document.querySelector("#close-modal-button").addEventListener('click', function() {
+    document.querySelector("body").style.overflow = 'overlay';
+});
+</script>
 <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
