@@ -336,4 +336,5 @@ function getRandomMessage() {
 }
 
 document.getElementById("preloadermessages").innerHTML = `idk ${getRandomMessage()}`;
+window.localStorage.getItem('darkmode');
 
