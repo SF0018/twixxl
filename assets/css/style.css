@@ -725,7 +725,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: linear-gradient(170deg,#8224e3, #ed1e79);;
+  background: linear-gradient(179.7deg,#8224e3, #ed1e79);;
   margin: 4px 10px;
 }
 .section-title p {
@@ -735,7 +735,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  background-image: linear-gradient(170deg,#8224e3,#ed1e79);
+  background-image: linear-gradient(179.7deg,#8224e3,#ed1e79);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -805,7 +805,7 @@ section {
 .about .icon-boxes h3 {
   font-size: 28px;
   font-weight: 700;
-  background-image: linear-gradient( 170deg,#8224e3,#ed1e79);
+  background-image: linear-gradient( 179.7deg,#8224e3,#ed1e79);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

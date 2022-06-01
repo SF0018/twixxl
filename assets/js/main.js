@@ -336,5 +336,41 @@ function getRandomMessage() {
 }
 
 document.getElementById("preloadermessages").innerHTML = `idk ${getRandomMessage()}`;
-window.localStorage.getItem('darkmode');
+
+let dmode = window.localStorage.getItem('darkMode')
+
+if (dmode !== null && dmode === 'true') {
+  // make dark mode
+  document.documentElement.setAttribute('data-theme', "dark");
+} else if (dmode !== null && dmode === 'false') {
+  // make light mode
+  document.documentElement.setAttribute('data-theme', "light");
+} else {
+  // dmode is null, set the default mode
+  let preference = (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.setAttribute('data-theme', preference);
+}
+
+
+
+
+let darkModeCheckbox = document.querySelector('.switch input'); // grab the checkbox element
+
+darkModeCheckbox.addEventListener('change', darkMode); // add listener, so that when the checkbox changes states the function gets called
+
+function darkMode (e) {
+  if (darkModeCheckbox.checked === true) {
+    
+    window.localStorage.setItem('darkMode', 'true'); // save dark mode as true
+
+    // other dark mode stuff
+
+  } else {
+    
+    window.localStorage.setItem('darkMode', 'false'); // save dark mode as false (light mode)
+
+    // other light mode stuff
+
+  }
+}
 
