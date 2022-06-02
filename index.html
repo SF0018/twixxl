@@ -782,7 +782,7 @@
                   top: 390px;
                   left: 10px;
                   transform: translateY(-50%);">
-                    <input type="submit" id="logIn" value="Signup">
+                    <input type="submit" id="signup" value="Signup">
                   </div>
                   <div class="sign_up">
                     Already have an account? <a href="#">Login</a>
@@ -833,7 +833,7 @@ document.querySelector("#close-modal-button").addEventListener('click', function
   const database = getDatabase(app);
   const auth = getAuth();
 
-  logIn.addEventListener('click',(e)=> {
+  signup.addEventListener('click',(e)=> {
 
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
