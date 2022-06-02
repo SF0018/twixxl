@@ -266,13 +266,13 @@ checkbox.addEventListener('change', function() {
 
 let theme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 
-if (theme === "dark") {
+if (theme === "light") {
   // make dark mode
-  document.documentElement.setAttribute('data-theme', "dark");
-  checkbox.checked = true;
-} else if (theme === 'light') {
-  // make light mode
   document.documentElement.setAttribute('data-theme', "light");
+  checkbox.checked = true;
+} else if (theme === 'dark') {
+  // make light mode
+  document.documentElement.setAttribute('data-theme', "dark");
   checkbox.checked = false;
 }
 
