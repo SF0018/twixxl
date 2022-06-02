@@ -225,7 +225,8 @@ checkbox.addEventListener('change', function() {
     }
 })
 
-let theme = localStorage.getItem('theme');
+let theme = localStorage.getItem('theme') || "light"; // light theme by default
+
 if (theme === "dark") {
   // make dark mode
   document.documentElement.setAttribute('data-theme', "dark");
