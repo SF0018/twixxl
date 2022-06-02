@@ -202,51 +202,12 @@
 
 })()
 
- /**
-   * Download button
-   */
-let userAgent = navigator.appVersion;
-let osDetails = {
-  name: 'Unknown OS',
-  icon: 'bi-question-circle'
-};
 
-if (userAgent.includes('Macintosh')) {
-  osDetails.name = 'Mac';
-  osDetails.icon = 'bi-download';
-}
-
-if (userAgent.includes('Windows')) {
-  osDetails.name = 'Windows';
-  osDetails.icon = 'bi-download';
-}
-
-if (userAgent.includes('Linux')) {
-  osDetails.name = 'Linux';
-  osDetails.icon = 'bi-download';
-}
-
-if (userAgent.includes('iPhone')) {
-  osDetails.name = 'iPhone';
-  osDetails.icon = 'bi-download';
-}
-
-if (userAgent.includes('Android')) {
-  osDetails.name = 'Android';
-  osDetails.icon = 'bi-download';
-}
-updateOsDownloadButton(osDetails);
-
-
-function updateOsDownloadButton(osDetails) {
-  let iconHtml = '<i class="icon bi ' + osDetails.icon + '"></i>'
-  document.querySelector('.btn-download-os').innerHTML = iconHtml + ' Download for ' + osDetails.name
-}
 
  /**
    * Counter
    */
-if (updateOsDownloadButton.target);
+
 
 
 
