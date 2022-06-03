@@ -1782,7 +1782,7 @@ span.psw {
      width: 100%;
   }
 }
-form .option_div{
+.modal-content .option_div{
   margin-top: 5px;
   display: flex;
   justify-content: space-between;
@@ -1833,9 +1833,7 @@ form .option_div{
 }
 
 
-.modal-content {
-  margin-top: 25px;
-}
+
 .modal-content .input_box{
   height: 50px;
   width: 350px;
