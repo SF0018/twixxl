@@ -21,10 +21,10 @@ body {
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(170deg,#8224e3, #ed1e79);;
   border-radius: 100px;
-  opacity:0.90;
+  opacity: var(--opacity);
 }
 ::-webkit-scrollbar-thumb:hover {
-  opacity: 1;
+  opacity: var(--opacity-hover);
   border-radius: 100px;
 }
 
@@ -129,6 +129,8 @@ html[data-theme='dark'] {
   --color-headings: linear-gradient(170deg,#8224e3, #ed1e79);
   --color-text: #fafafa;
   --hero: #000;
+  --opacity: 0.9;
+  --opacity-hover: 1;
 }
 html[data-theme='light'] {
   --bg: #fff;
@@ -136,6 +138,8 @@ html[data-theme='light'] {
   --color-headings: linear-gradient(170deg,#8224e3, #ed1e79);
   --color-text: #000;
   --hero: #141518;
+  --opacity: 1;
+  --opacity-hover: 0.9;
 }
 html {
   --bg: #fff;
@@ -143,6 +147,8 @@ html {
   --color-headings: linear-gradient(170deg,#8224e3, #ed1e79);
   --color-text: #000;
   --hero: #141518;
+   --opacity: 1;
+   --opacity-hover: 0.9;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -226,7 +232,6 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top {
   position: fixed;
   visibility: hidden;
-  opacity: 0;
   right: 15px;
   bottom: 15px;
   z-index: 996;
@@ -235,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
-  opacity: 0.90;
+  opacity: var(--opacity);
 }
 .back-to-top i {
   font-size: 28px;
@@ -243,12 +248,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  opacity: 1;
+  opacity: var(--opacity-hover);
   color: #fff;
 }
 .back-to-top.active {
   visibility: visible;
-  opacity: 1;
+  opacity: var(--opacity);
 }
 
 /*--------------------------------------------------------------
@@ -828,10 +833,10 @@ section {
 .about .icon-box .icon i {
   color: var(--color-text);
   font-size: 32px;
-  opacity:0.90;
+  opacity: var(--opacity);
 }
 .about .icon-box:hover .icon {
-  opacity: 1;
+  opacity: var(--opacity-hover);
   background: linear-gradient(170deg,#8224e3, #ed1e79);;
   border-color: var(--bg)
 }
@@ -1341,7 +1346,7 @@ section {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   transition: 0.3s;
-  opacity: 1;
+  opacity: var(--opacity);
   cursor: pointer;
 }
 .pricing .btn-buy:hover {
@@ -1356,7 +1361,7 @@ section {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   transition: 0.3s;
-  opacity:0.90;
+  opacity: var(--opacity-hover);
   box-shadow: 0 0.5em 0.5em -0.4em rgba(250, 250, 250, 0.2);
   transform: translateY(-0.25em);
 }
@@ -1480,7 +1485,7 @@ section {
   background: linear-gradient(170deg,#8224e3, #ed1e79);
   will-change: transform;
   transition: transform 450ms;
-  opacity: 1;
+  opacity: var(--opacity);
   cursor: pointer;
 }
 .btn-download-os:hover {
@@ -1496,7 +1501,7 @@ section {
   background: linear-gradient(170deg,#8224e3, #ed1e79);
   will-change: transform;
   transition: transform 450ms;
-  opacity: 0.90;
+  opacity: var(--opacity-hover);
   box-shadow: 0 0.5em 0.5em -0.4em rgba(250, 250, 250, 0.2);
   transform: translateY(-0.25em);
 }
@@ -1626,10 +1631,10 @@ section {
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
-  opacity: 1;
+  opacity: var(--opacity);
 }
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  opacity:0.90;
+  opacity: var(--opacity-hover);
   box-shadow: 0 0.5em 0.5em -0.4em rgba(250, 250, 250, 0.2);
 }
 #footer .copyright {
@@ -1825,10 +1830,10 @@ form .option_div{
 }
 
 
-form {
+.modal-content {
   margin-top: 25px;
 }
-form .input_box{
+.modal-content .input_box{
   height: 50px;
   width: 350px;
   position: relative;
@@ -1862,7 +1867,7 @@ form .input_box{
     margin-right: 4px;
     border-radius: 50%;
 }
-form .option_div{
+.modal-content .option_div{
   margin-top: 5px;
   display: flex;
   justify-content: space-between;
@@ -1885,20 +1890,20 @@ form .option_div{
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s linear;
-  opacity: 1;
+  opacity: var(--opacity);
 }
 .button input:hover{
-  opacity: 0.90;
+  opacity: var(--opacity-hover);
 }
-form .sign_up{
+.modal-content .sign_up{
   text-align: center;
   margin-top: 30px;
   left: 60px;
 }
-form a{
+.modal-content a{
   text-decoration: none;
 }
-form a:hover{
+.modal-content a:hover{
   text-decoration: underline;
 }
 .modal h3 {
