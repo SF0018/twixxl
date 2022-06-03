@@ -1107,6 +1107,9 @@ section {
   background-size: cover;
   position: relative;
 }
+.testimonials a {
+  color: var(--color-text);
+}
 .testimonials::before {
   content: "";
   position: absolute;
