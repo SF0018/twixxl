@@ -181,50 +181,39 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   background: #141518;
 }
-#preloader:before {
-  content: "";
+#preloader .pre-container{
   position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid ;
-  border-image: linear-gradient(170deg,#8224e3, #ed1e79);;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  top: 380px;
+  left: 25%;
 }
 #preloader h1 {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 900;
   font-family: "Montserrat", sans-serif;
-  text-align: center;
   font-size: 15px;
-  margin-top: 380px;
 }
 #preloader p {
   color: rgba(255, 255, 255, 0.8);
-  text-align: center;
   font-size: 15px;
   
+}
+.pre-img {
+animation-name: spin;
+animation-duration: 0.5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /*--------------------------------------------------------------
 # Back to top button
