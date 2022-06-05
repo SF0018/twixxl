@@ -1,5 +1,5 @@
 # twixxl
 Your platform to meet the world and everyone in between.
  # Preveiw's
-![gallery-2](https://user-images.githubusercontent.com/82166240/168598403-dd24239d-7fc9-466e-a213-23999f2f7089.jpg)
-![gallery-1](https://user-images.githubusercontent.com/82166240/168598415-8a6b6813-7e5d-41ac-bef2-98cf6633816b.jpg)
+![twixxl app](https://user-images.githubusercontent.com/82166240/172071146-1f75b74e-f7cc-4f40-bbcc-8c9702901953.png)
+![twixxl_preview](https://user-images.githubusercontent.com/82166240/172071154-86b85e61-f9f3-4c65-85bd-eec18db4affa.jpg)
