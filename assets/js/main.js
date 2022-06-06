@@ -251,3 +251,14 @@ document.getElementById('alert').style.display = "block";
 }
 
 
+/** 
+ * Preloader messages 
+ * */
+ const  texts = [
+  "twixxl's birthday is on 10th of january",
+  "twixxl is fully encrypted",
+  "twixxl was developed by SF18"
+ ];
+ 
+ document.getElementById('randommessage').innerText = texts[Math.floor(Math.random()*texts.length)];
+ 
