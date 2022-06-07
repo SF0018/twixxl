@@ -255,9 +255,11 @@ document.getElementById('alert').style.display = "block";
  * Preloader messages 
  * */
  const  texts = [
-  "twixxl's birthday is on 10th of january",
-  "twixxl is fully encrypted",
-  "twixxl was developed by SF18"
+  "twixxl's birthday is on 10th of january.",
+  "twixxl is fully encrypted.",
+  "twixxl was developed by SF18.",
+  "twixxl logo took 20 tries to perfect.",
+  "SF18 was inspired by the movie Social Network.",
  ];
  
  document.getElementById('randommessage').innerText = texts[Math.floor(Math.random()*texts.length)];
