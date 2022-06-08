@@ -841,7 +841,10 @@ section {
   transition: 0.3s;
 }
 .about .icon-box .title a:hover {
-  color: linear-gradient(170deg,#8224e3, #ed1e79);;
+  background-image: linear-gradient( 179.7deg,#8224e3,#ed1e79);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .about .icon-box .description {
   margin-left: 85px;
@@ -1936,12 +1939,11 @@ span.psw {
 .alert {
   background-color: #ff9800; /* Red */
   color: white;
-  width: 400px;
+  width: 100%;
   position: fixed;
-  border-radius: 12px;
   display: none;
   z-index: 99;
-  top: 5em;
+  top: 3.8em;
   -webkit-animation: animatezoom 0.4s;
   animation: animatezoom 0.4s;
 }
@@ -1970,37 +1972,9 @@ span.psw {
 
 /* When moving the mouse over the close button */
 .closebtn:hover {
-  color: black;
+  color: red;
 }
 
-@media screen and (max-width: 800px) { 
-  .alert {
-    background-color: #ff9800; /* Red */
-    color: white;
-    width: 400px;
-    float: right;
-    margin-left: 50px;
-    position: fixed;
-    align-items: center;
-    border-radius: 12px;
-    display: none;
-    z-index: 99
-  }
-}
 
-@media screen and (max-width: 412px) { 
-  .alert {
-    background-color: #ff9800; /* Red */
-    color: white;
-    width: 350px;
-    float: right;
-    margin-left: 10px;
-    position: fixed;
-    align-items: center;
-    border-radius: 12px;
-    display: none;
-    z-index: 99
-  }
-}
 
 
