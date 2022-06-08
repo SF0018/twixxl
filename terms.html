@@ -206,10 +206,12 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader">
     <div class="pre-container">
-    <img class="pre-img" src="/assets/img/New_twixxl Logo_Rounded.svg" height="60" style=" position: fixed; top: 290px; left: 48%;" alt="">
+      <div class="container">
+    <img class="pre-img" src="/assets/img/New_twixxl Logo_Rounded.svg" height="60" style="position: relative; top: -50px;" alt="">
     <h1>DID YOU KNOW?</h1>
-    <p>twixxl's birthday is on 10th of january</p>
+    <p id="randommessage"></p>
   </div>
+</div>
 </div>
 
   <!-- Vendor JS Files -->
@@ -226,14 +228,15 @@
 </body>
 <div id="id01" class="modal">
 
-  <form class="modal-content animate">
-    <div class="imgcontainer">
+  <div class="modal-content animate">
+    
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Signup" id="close-modal-button">&times;</span>
       <img src="/assets/img/twixxl_login_background.png" height="90" style="border-radius: 8px;" alt="">
-      <div> <img src="/assets/img/twixxl_User.jpg" height="70" style="border-radius: 100%;  position: absolute;
+      <img src="/assets/img/twixxl_User.jpg" height="70" style="border-radius: 100%;  position: absolute;
        top: 130px;
        left: 40%;
        transform: translateY(-50%); " alt="">
+       
                   <div class="input_box" style="  position: absolute;
                   top: 170px;
                   left: 10px;
@@ -255,29 +258,19 @@
                     <input type="password" id="password" placeholder="Password" required>
                     <div class="icon"><i class="bi bi-key"></i></div>
                   </div>
-                  <p style=" white-space: nowrap;font-size: 0.7em; margin-top: 41%; margin-left:-2%;">By creating an account you agree to our <a href="terms.html" style="color:dodgerblue;">Terms & Privacy</a>.</p>
+                  <p style=" white-space: nowrap;font-size: 0.7em; margin-top: 41%; margin-left:-2%;">By creating an account you agree to our <a href="terms.html" style="color:dodgerblue;">Terms of service</a>.</p>
                   <div class="input_box button" style="  position: absolute;
                   top: 390px;
                   left: 10px;
                   transform: translateY(-50%);">
-                    <input type="submit" id="logIn" value="Signup">
+                    <input type="submit" id="signUp" value="Signup">
                   </div>
                   <div class="sign_up">
-                    Already have a account? <a href="#">Login</a>
+                    Already have an account? <a href="#">Login</a>
                   </div>
-  </form>
+  </div>
 </div>
-<style>
-#hero:before {
-    content: "";
-    background: var(--bg);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-</style>
+
 <script>
 // Get the modal
 var modal = document.getElementById('id01');
@@ -321,7 +314,7 @@ document.querySelector("#close-modal-button").addEventListener('click', function
   const database = getDatabase(app);
   const auth = getAuth();
 
-  logIn.addEventListener('click',(e)=> {
+  signUp.addEventListener('click',(e)=> {
 
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
@@ -404,4 +397,15 @@ logout.addEventListener('click',(e)=>{
 
 });
 </script>
+<style>
+  #hero:before {
+      content: "";
+      background: var(--bg);
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+  }
+  </style>
 </html>
