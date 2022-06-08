@@ -1946,6 +1946,7 @@ span.psw {
   top: 3.8em;
   -webkit-animation: animatezoom 0.4s;
   animation: animatezoom 0.4s;
+  text-align: center;
 }
 
 @-webkit-keyframes animatezoom {
