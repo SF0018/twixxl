@@ -261,6 +261,4 @@ document.getElementById('alert').style.display = "block";
   "twixxl logo took 20 tries to perfect.",
   "SF18 was inspired by the movie Social Network.",
  ];
- 
  document.getElementById('randommessage').innerText = texts[Math.floor(Math.random()*texts.length)];
- 
