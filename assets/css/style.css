@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 900;
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 12px;
 }
 #preloader p {
   color: rgba(255, 255, 255, 0.8);
@@ -1937,27 +1937,24 @@ span.psw {
 }
 /* The alert message box */
 .alert {
+  position: relative;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0rem;
   background-color: #ff9800; /* Red */
   color: white;
   width: 100%;
   position: fixed;
   display: none;
   z-index: 99;
-  top: 3.8em;
+  top: 3.7em;
   -webkit-animation: animatezoom 0.4s;
   animation: animatezoom 0.4s;
   text-align: center;
 }
 
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
+
 
 /* The close button */
 .closebtn {
@@ -1965,17 +1962,103 @@ span.psw {
   color: white;
   font-weight: bold;
   float: right;
-  font-size: 22px;
+  font-size: 25px;
   line-height: 20px;
   cursor: pointer;
   transition: 0.3s;
+  opacity: 0.9;
 }
 
 /* When moving the mouse over the close button */
 .closebtn:hover {
-  color: red;
+  opacity: 1;
+}
+.employees {
+  text-align: center; 
+  margin-top: 4%; 
+  font-weight: 900;
+  font-size:30px;
+  color: var(--color-text);
+  opacity: var(--opacity);
+}
+.employees:hover {
+  opacity: var(--opacity-hover);
+  text-align: center; 
+  margin-top: 4%; 
+  font-weight: 900;
+  font-size:30px;
+  color: var(--color-text);
+}
+.employees {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+.mouse {
+  width: 26px;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  position: relative;
+  overflow: hidden;
+  left: 60%;
+  margin: -100px 0 0 -150px;
+  margin-top: -100px;
+}
+.mouse .roll {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 4px;
+  margin-left: -2px;
+  height: 4px;
+  border-radius: 4px;
+  background: #fff;
+  -webkit-animation: mouseScroll .8s cubic-bezier(.7,0,.3,1) infinite alternate;
+  animation: mouseScroll .8s cubic-bezier(.7,0,.3,1) infinite alternate;
+  z-index: 2;
+}
+.mouse .rollshadow {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 4px;
+  margin-left: -2px;
+  height: 4px;
+  background: linear-gradient(170deg,#8224e3, #ed1e79);;
+  border-radius: 4px;
+  -webkit-animation: mouseScroll .8s cubic-bezier(.7,0,.3,1) infinite alternate;
+  animation: mouseScroll .8s cubic-bezier(.7,0,.3,1) infinite alternate;
+      animation-delay: 0s;
+  -webkit-animation-delay: 80ms;
+  animation-delay: 80ms;
+  z-index: 1;
+}
+@-webkit-keyframes mouseScroll {
+0% {
+-webkit-transform:translateY(0);
+transform:translateY(0)
+}
+100% {
+-webkit-transform:translateY(14px);
+transform:translateY(14px)
+}
+}
+@keyframes mouseScroll {
+0% {
+-webkit-transform:translateY(0);
+transform:translateY(0)
+}
+100% {
+-webkit-transform:translateY(14px);
+transform:translateY(14px)
+}
 }
 
+
+@media screen and (max-width: 991px) { 
+  .mouse {
+    display: none;
+  }
+};
 
 
 
