@@ -202,72 +202,47 @@
 
 })()
 
- /**
-   * Download button
-   */
-let userAgent = navigator.appVersion;
-let osDetails = {
-  name: 'Unknown OS',
-  icon: 'bi-question-circle'
-};
 
-if (userAgent.includes('Macintosh')) {
-  osDetails.name = 'Mac';
-  osDetails.icon = 'bi-download';
-}
-
-if (userAgent.includes('Windows')) {
-  osDetails.name = 'Windows';
-  osDetails.icon = 'bi-download';
-}
-
-if (userAgent.includes('Linux')) {
-  osDetails.name = 'Linux';
-  osDetails.icon = 'bi-download';
-}
-
-if (userAgent.includes('iPhone')) {
-  osDetails.name = 'iPhone';
-  osDetails.icon = 'bi-download';
-}
-
-if (userAgent.includes('Android')) {
-  osDetails.name = 'Android';
-  osDetails.icon = 'bi-download';
-}
-updateOsDownloadButton(osDetails);
-
-
-function updateOsDownloadButton(osDetails) {
-  let iconHtml = '<i class="icon bi ' + osDetails.icon + '"></i>'
-  document.querySelector('.btn-download-os').innerHTML = iconHtml + ' Download for ' + osDetails.name
-}
 
  /**
    * Counter
    */
-if (updateOsDownloadButton.target);
 
 
 
-var checkbox = document.querySelector('input[name=theme]');
+
+let checkbox = document.querySelector('input[name=theme]');
 
 checkbox.addEventListener('change', function() {
     if(this.checked) {
         trans()
         document.documentElement.setAttribute('data-theme', 'dark')
+        localStorage.setItem('theme', 'dark');
     } else {
         trans()
         document.documentElement.setAttribute('data-theme', 'light')
+        localStorage.setItem('theme', 'light');
     }
 })
+
+let theme = localStorage.getItem('theme') || "light"; // light theme by default
+
+if (theme === "dark") {
+  // make dark mode
+  document.documentElement.setAttribute('data-theme', "dark");
+  checkbox.checked = true;
+} else if (theme === 'light') {
+  // make light mode
+  document.documentElement.setAttribute('data-theme', "light");
+  checkbox.checked = false;
+}
 
 
 let trans = () => {
     document.documentElement.classList.add('transition');
     window.setTimeout(() => {
         document.documentElement.classList.remove('transition')
-    }, 1000)
+    }, 500)
 }
 
 
@@ -275,56 +250,36 @@ function comingsoon() {
 document.getElementById('alert').style.display = "block";
 }
 
-// About Video
 
-const videoPlayer = document.querySelector('.video-player')
-const video = videoPlayer.querySelector('.video')
-const playButton = videoPlayer.querySelector('.play-button')
-const volume = videoPlayer.querySelector('.volume')
-const currentTimeElement = videoPlayer.querySelector('.current')
-const durationTimeElement = videoPlayer.querySelector('.duration')
-const progress = videoPlayer.querySelector('.video-progress')
-const progressBar = videoPlayer.querySelector('.video-progress-filled')
+/** 
+ * Preloader messages 
+ * */
+ const  texts = [
+  "twixxl's birthday is on 10th of january.",
+  "twixxl is fully encrypted.",
+  "twixxl was developed by SF18.",
+  "twixxl logo took 20 tries to perfect.",
+  "SF18 was inspired by the movie Social Network.",
+ ];
+ document.getElementById('randommessage').innerText = texts[Math.floor(Math.random()*texts.length)];
 
-
-//Play and Pause button
-playButton.addEventListener('click', (e) => {
-  if(video.paused){
-    video.play()
-    e.target.textContent = '❚ ❚'
-  } else {
-    video.pause()
-    e.target.textContent = '►'
-  }
-})
-
-//volume
-volume.addEventListener('mousemove', (e)=> {
-  video.volume = e.target.value
-})
-
-//current time and duration
-const currentTime = () => {
-  let currentMinutes = Math.floor(video.currentTime / 60)
-  let currentSeconds = Math.floor(video.currentTime - currentMinutes * 60)
-  let durationMinutes = Math.floor(video.duration / 60)
-  let durationSeconds = Math.floor(video.duration - durationMinutes * 60)
-
-  currentTimeElement.innerHTML = `${currentMinutes}:${currentSeconds < 10 ? '0'+currentSeconds : currentSeconds}`
-  durationTimeElement.innerHTML = `${durationMinutes}:${durationSeconds}`
+ function prefrence() {
+document.getElementById('settings').style.display = "block";
 }
+const optionMenu = document.querySelector(".select-menu"),
+  selectBtn = optionMenu.querySelector(".select-btn"),
+  options = optionMenu.querySelectorAll(".option"),
+  sBtn_text = optionMenu.querySelector(".sBtn-text");
 
-video.addEventListener('timeupdate', currentTime)
+selectBtn.addEventListener("click", () =>
+  optionMenu.classList.toggle("active")
+);
 
+options.forEach((option) => {
+  option.addEventListener("click", () => {
+    let selectedOption = option.querySelector(".option-text").innerText;
+    sBtn_text.innerText = selectedOption;
 
-//Progress bar
-video.addEventListener('timeupdate', () =>{
-  const percentage = (video.currentTime / video.duration) * 100
-  progressBar.style.width = `${percentage}%`
-})
-
-//change progress bar on click
-progress.addEventListener('click', (e) =>{
-  const progressTime = (e.offsetX / progress.offsetWidth) * video.duration
-  video.currentTime = progressTime
-})
+    optionMenu.classList.remove("active");
+  });
+});

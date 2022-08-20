@@ -242,7 +242,7 @@ let trans = () => {
     document.documentElement.classList.add('transition');
     window.setTimeout(() => {
         document.documentElement.classList.remove('transition')
-    }, 1000)
+    }, 500)
 }
 
 
@@ -250,6 +250,9 @@ function comingsoon() {
 document.getElementById('alert').style.display = "block";
 }
 
+function  thankYou() {
+  location.href = "https://twixxl.com/thankyou";
+}
 
 /** 
  * Preloader messages 
@@ -262,3 +265,24 @@ document.getElementById('alert').style.display = "block";
   "SF18 was inspired by the movie Social Network.",
  ];
  document.getElementById('randommessage').innerText = texts[Math.floor(Math.random()*texts.length)];
+
+ function prefrence() {
+document.getElementById('settings').style.display = "block";
+}
+const optionMenu = document.querySelector(".select-menu"),
+  selectBtn = optionMenu.querySelector(".select-btn"),
+  options = optionMenu.querySelectorAll(".option"),
+  sBtn_text = optionMenu.querySelector(".sBtn-text");
+
+selectBtn.addEventListener("click", () =>
+  optionMenu.classList.toggle("active")
+);
+
+options.forEach((option) => {
+  option.addEventListener("click", () => {
+    let selectedOption = option.querySelector(".option-text").innerText;
+    sBtn_text.innerText = selectedOption;
+
+    optionMenu.classList.remove("active");
+  });
+});

@@ -13,7 +13,7 @@
 <meta property="og:title" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="Your platform to meet the world and everyone in between." />
-<meta property="og:site_name" content="twixxl.pages.dev">  
+<meta property="og:site_name" content="twixxl.com">  
 <meta itemprop="name" content="">  
 <meta property="og:image" content="https://imgur.com/i9PGame.png"/>
 <meta itemprop="description" content="">  
@@ -36,28 +36,75 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="./assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
-  
+
   <!-- ======= Header ======= -->
+   <div class="settings" id="settings" data-aos="zoom-out">
+    <div style="padding: 1.5rem;"> 
+     <div>
+    <span class="closebtn" onclick="settings.style.display='none';">&times;</span>
+    <h1>Settings</h1>
+    <p>Configure the settings to your liking.</p>
+    </div>
+    <div class="theme-settings">
+      <h1>Light / Dark</h1>
+      <div id="darkmode" class="darkmode-switch"><label class="switch">
+            <input type="checkbox" id="checkBox" name="theme" >
+            <span class="slider"></span>
+          </label>  <span class="recommended">Recommended</span></div> 
+
+      </div>
+      <div class="language">
+              <h1>Language</h2> 
+      </div>
+          <div class="language">
+        <div class="select-menu active">
+  <div class="select-btn">
+    <span class="sBtn-text">Select your language</span>
+    <i class="bx bx-chevron-down"></i>
+  </div>
+
+  <ul class="options">
+    <li class="option">
+      <span class="option-text">English</span>
+    </li>
+    <li class="option">
+      <span class="option-text">Arabic</span>
+    </li>
+    <li class="option">
+      <span class="option-text">Hindi</span>
+    </li>
+    <li class="option">
+      <span class="option-text">French</span>
+    </li>
+  </ul>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="alert" id="alert" data-aos="zoom-out">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <strong>Warning!</strong> Still under development, Coming soon!
+  </div>
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html"><img src="/assets/img/New_twixxl Logo_Rounded.svg" alt="" class="img-fluid"> <span>twixxl</span></a></h1>
+        <h1><a href="index"><img src="/assets/img/New_twixxl Logo_Rounded.svg" alt="" class="img-fluid"> <span>twixxl</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -70,8 +117,9 @@
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
           <li><a class="nav-link scrollto" href="#download">Download</a></li>
           <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
+            
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
+              <li><a style="cursor:pointer;" onclick="prefrence()" >Settings</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -94,10 +142,6 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
-    <div class="alert" id="alert">
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-      <strong>Warning!</strong> Still under development, Coming soon!
-    </div>
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -113,6 +157,12 @@
           <img src="assets/img/twixxl app.png" class="img-fluid animated" alt="">
         </div>
       </div>
+      <a href="#about">
+      <div class="mouse" data-aos="zoom-out" >
+        <div class="roll"></div>
+        <div class="rollshadow"></div>
+      </div>
+    </a>
     </div>
 
     <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
@@ -129,24 +179,23 @@
         <use xlink:href="#wave-path" x="50" y="9" fill="var(--bg)">
       </g>
     </svg>
-
   </section><!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container-fluid">
+      <div class="container">
 
         <div class="row">
           <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
-            <a class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+            <a class="venobox play-btn mb-4" style="cursor: pointer;" onclick="document.getElementById('about-vid').style.display='block'" id="open-vid-button" target="_blank" data-vbtype="video" data-autoplay="true"></a>
           </div>
           
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
             <h3>What is twixxl?</h3>
-            <p>twixxl is your platform to meet the world and everyone in between. Our services offer completely end-to-end encrypted messaging and call functionality between users. It's a combination of Twitter and Discord. Our services offer completely end-to-end encrypted messaging and call functionality between users.</p>
+            <p>Twixxl is your platform to meet the world and everyone in between. Our services offer completely end-to-end encrypted messaging and call functionality between users. It's a combination of Twitter and Discord.</p>
 
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon"><i class="bx bx-lock"></i></div>
@@ -157,11 +206,10 @@
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon"><i class="bx bx-server"></i></div>
               <h4 class="title"><a href="">Servers</a></h4>
-              <p class="description">twixxl has a server infrastructure that spans multiple locations around the world, this ensures that you always receive the highest speeds and most stable connections possible.</p>
+              <p class="description">Twixxl has a server infrastructure that spans multiple locations around the world, this ensures that you always receive the highest speeds and most stable connections possible.</p>
             </div>
           </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
 
@@ -249,7 +297,7 @@
           </div>
         </div>
 
-      </div>m
+      </div>
     </section><!-- End Features Section -->
 
   <!-- ======= Counts Section ======= -->
@@ -261,7 +309,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="count-box">
             <i class="bi bi-download"></i>
-            <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
             <p>Downloads</p>
           </div>
         </div>
@@ -269,7 +317,7 @@
         <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
           <div class="count-box">
             <i class="bi bi-person"></i>
-            <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter">0</span>
+            <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter">0</span>
             <p>Users</p>
           </div>
         </div>
@@ -285,8 +333,8 @@
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="count-box">
             <i class="bi bi-people"></i>
-            <span >2</span>
-            <p>Hard Workers</p>
+            <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter">4</span>
+            <p>Employees</p>
           </div>
         </div>
 
@@ -322,6 +370,14 @@
             </div>
           </div>
 
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -336,7 +392,20 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/twixxl_User.jpg" class="testimonial-img" alt="">
+                <a href="https://tylerpotts.co.uk/"><img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""></a>
+                <h3><a href="https://tylerpotts.co.uk/">Tyler Potts</a></h3>
+                <h4>Developer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Amazing website dude!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
                 <h3>User</h3>
                 <h4>User of twixxl</h4>
                 <p>
@@ -349,7 +418,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/twixxl_User.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                 <h3>User</h3>
                 <h4>User of twixxl</h4>
                 <p>
@@ -362,7 +431,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/twixxl_User.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
                 <h3>User</h3>
                 <h4>User of twixxl</h4>
                 <p>
@@ -375,20 +444,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/twixxl_User.jpg" class="testimonial-img" alt="">
-                <h3>User</h3>
-                <h4>User of twixxl</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/twixxl_User.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                 <h3>User</h3>
                 <h4>User of twixxl</h4>
                 <p>
@@ -453,8 +509,8 @@
             <div class="member" data-aos="zoom-in" data-aos-delay="300">
               <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>User</h4>
-                <span>Spot available!</span>
+                <h4>Stitzyy</h4>
+                <span>VP & Head of FM, Adv and HRO</span>
                 <div class="social">
                   <a href=""><i class="bi bi-globe2"></i></a>
                   <a href=""><i class="bi bi-youtube"></i></a>
@@ -469,8 +525,8 @@
             <div class="member" data-aos="zoom-in" data-aos-delay="400">
               <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>User</h4>
-                <span>Spot available!</span>
+                <h4>Bushy</h4>
+                <span>Senior Software Engineer</span>
                 <div class="social">
                   <a href=""><i class="bi bi-globe2"></i></a>
                   <a href=""><i class="bi bi-youtube"></i></a>
@@ -480,7 +536,7 @@
               </div>
             </div>
           </div>
-
+          <a class="employees" href="employees"><i class="bi bi-chevron-down" title="More Employees..." data-aos="zoom-in" data-aos-delay="500"></i></a>
         </div>
 
       </div>
@@ -502,11 +558,11 @@
               <h3>twixxl Free</h3>
               <h4><sup>$</sup>0<span> / month</span></h4>
               <ul>
-                <li>Darkmode</li>
-                <li>10Mb Uploads</li>
-                <li class="na">Flower Support</li>
-                <li class="na">Custom Wallpaper</li>
-                <li class="na">Custom Badges</li>
+                <li><strong>Emojies</strong> <i class="bi bi-check" style="color: #04AA6D;"></i></li>
+                <li><strong>5Mb Uploads</strong> <i class="bi bi-check" style="color: #04AA6D;"></i></li>
+                <li class="na">Flower Support <i class="bi bi-x" style="color:#f44336"></i></li>
+                <li class="na">Custom Wallpaper <i class="bi bi-x" style="color:#f44336"></i></li>
+                <li class="na">Custom Badges <i class="bi bi-x" style="color:#f44336"></i></li>
               </ul>
               <div class="btn-wrap">
                 <a onclick="comingsoon()" class="btn-buy">Buy Now</a>
@@ -519,11 +575,11 @@
               <h3>twixxl Budget</h3>
               <h4><sup>$</sup>4.99<span> / month</span></h4>
               <ul>
-                <li>Darkmode</li>
-                <li>25Mb Uploads</li>
-                <li>Flower Support 2x</li>
-                <li class="na">Custom Wallpaper</li>
-                <li class="na">Custom Badges</li>
+                <li><strong>Emojies</strong> <i class="bi bi-check" style="color: #04AA6D;"></i></li>
+                <li><strong>10Mb Uploads</strong> <i class="bi bi-check" style="color: #04AA6D;"></i></li>
+                <li><strong>Flower Support 2x</strong> <i class="bi bi-check" style="color: #04AA6D;"></i></li>
+                <li class="na">Custom Wallpaper <i class="bi bi-x" style="color:#f44336"></i></li>
+                <li class="na">Custom Badges <i class="bi bi-x" style="color:#f44336"></i></li>
               </ul>
               <div class="btn-wrap">
                 <a onclick="comingsoon()" class="btn-buy">Buy Now</a>
@@ -536,11 +592,11 @@
               <h3>twixxl Classic</h3>
               <h4><sup>$</sup>9.99<span> / month</span></h4>
               <ul>
-                <li>Darkmode</li>
-                <li>50Mb Uploads</li>
-                <li>Flower Support 4x</li>
-                <li>Custom Wallpaper</li>
-                <li class="na">Custom Badges</li>
+                <li><strong>Emojies</strong> <i class="bi bi-check" style="color: #04AA6D;"></i></li>
+                <li><strong>15Mb Uploads</strong> <i class="bi bi-check" style="color: #04AA6D;"></i></li>
+                <li><strong>Flower Support 4x</strong> <i class="bi bi-check" style="color: #04AA6D;"></i></li>
+                <li><strong>Custom Wallpaper</strong> <i class="bi bi-check" style="color: #04AA6D;"></i></li>
+                <li class="na">Custom Badges <i class="bi bi-x" style="color:#f44336"></i></li>
               </ul>
               <div class="btn-wrap">
                 <a onclick="comingsoon()" class="btn-buy">Buy Now</a>
@@ -554,11 +610,11 @@
               <h3>twixxl Ultimate</h3>
               <h4><sup>$</sup>14.99<span> / month</span></h4>
               <ul>
-                <li>Darkmode</li>
-                <li>100Mb Uploads</li>
-                <li>Flower support 8x</li>
-                <li>Custom Wallpaper</li>
-                <li>Custom Badges</li>
+                <li><strong>Emojies</strong> <i class="bi bi-check" style="color: #04AA6D;"></i></li>
+                <li><strong>20Mb Uploads</strong> <i class="bi bi-check" style="color: #04AA6D;"></i></li>
+                <li><strong>Flower support 8x</strong> <i class="bi bi-check" style="color: #04AA6D;"></i></li>
+                <li><strong>Custom Wallpaper</strong> <i class="bi bi-check" style="color: #04AA6D;"></i></li>
+                <li><strong>Custom Badges</strong> <i class="bi bi-check" style="color: #04AA6D;"></i></li>
               </ul>
               <div class="btn-wrap">
                 <a onclick="comingsoon()" class="btn-buy">Buy Now</a>
@@ -613,8 +669,16 @@
               <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Where can I go to if I have a suggestion or complaint? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Get in touch with us with your suggestions or complaints by email at:
-                  <br><a href="mailto:officialtwixxl@gmail.com">officialtwixxl@gmail.com</a>
+                  Get in touch with us with your suggestions or complaints by email at: <strong>support@twixxl.com</strong>
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" class="collapsed">What is flower support? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Flower support is a way to support your favorite twixxler. By supporting them, they earn money. With buying twixxl Budget, Classic, Ultimate they all come with an exclusive twixxl support.  
                 </p>
               </div>
             </li>
@@ -652,12 +716,12 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3><a href="index.html"><img src="/assets/img/New_twixxl Logo_Rounded.svg" alt="" height="34"> <span>twixxl</span></a></h3>
+              <h3><a href="index"><img src="/assets/img/New_twixxl Logo_Rounded.svg" alt="" height="34"> <span>twixxl</span></a></h3>
               <p class="pb-3"><em>Your platform to meet the world and everyone in between.</em></p>
               <p>
                 <br>
                 Middle East<br><br>
-                <strong>Email:</strong> <a href="mailto:officialtwixxl@gmail.com">officialtwixxl@gmail.com</a><br>
+                <strong>Email:</strong> <a href="mailto:support@twixxl.com">support@twixxl.com</a><br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
@@ -675,7 +739,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Status</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="terms">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
@@ -683,11 +747,11 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Licenses</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Jobs</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Support</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Licenses</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Download</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#download">Download</a></li>
             </ul>
           </div>
 
@@ -698,10 +762,6 @@
               <input type="email" name="email" placeholder="Email address"><input type="submit" onclick="comingsoon()" value="Subscribe">
             </form>
           </div>
-          <div id="darkmode" class="darkmode-switch"><span>LIGHT </span><label class="switch">
-            <input type="checkbox" id="checkBox" name="theme" >
-            <span class="slider"></span>
-          </label><span> DARK  <span class="recommended">Recommended</span></span></div>
 
         </div>
       </div>
@@ -712,17 +772,22 @@
         Copyright &copy;2022 <strong><span>twixxl</span></strong>, All rights reserved.
       </div>
       <div class="credits">
-        <a href="">Privacy policy</a> | <a href="terms.html">Terms of service</a> | <a href="">Support</a>
+        <a href="">Privacy policy</a> | <a href="terms">Terms of service</a> | <a href="">Support</a>
       </div>
     </div>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader">
-    <img src="/assets/img/New_twixxl Logo_Rounded.svg" height="60" style=" position: fixed; top: 290px; left: 48%;" alt="">
+    <div class="pre-container">
+      <div class="container">
+    <img class="pre-img" src="/assets/img/New_twixxl Logo_Rounded.svg" height="60" style="position: relative; top: -50px;" alt="">
     <h1>DID YOU KNOW?</h1>
-    <p>twixxl's birthday is on 10th of january</p>
+    <p id="randommessage"></p>
   </div>
+</div>
+</div>
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>
@@ -735,46 +800,87 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-</body>
-<div id="id01" class="modal">
+<style>
+  .vid-box {
+    background-color: var(--bg);
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+    color: var(--color-text);
+}
+.vid-box h1 {
+  text-align: center;
+}
+.modalvid{
   
-  <form class="modal-content animate">
-    <div class="imgcontainer">
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    backdrop-filter: blur(10px);
+  
+}
+</style>
+
+<div id="about-vid" class="modalvid">
+
+  <div class="vid-box animate">
+      <span onclick="document.getElementById('about-vid').style.display='none'" class="close" title="Close Video" id="">&times;</span>
+    <h1>Coming soon!</h1>
+    </div>
+</div>
+
+<div id="id01" class="modal">
+
+  <div class="modal-content animate">
+    
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Signup" id="close-modal-button">&times;</span>
       <img src="/assets/img/twixxl_login_background.png" height="90" style="border-radius: 8px;" alt="">
-      <div> <img src="/assets/img/twixxl_User.jpg" height="70" style="border-radius: 100%;  position: absolute;
+      <img src="/assets/img/twixxl_User.jpg" height="70" style="border-radius: 100%;  position: absolute;
        top: 130px;
        left: 40%;
        transform: translateY(-50%); " alt="">
-      <h3><strong>Welcome</strong></h3>
-      <p>Become a twixxler to meet the world and everyone in between.</p>
-      <div class="input_box" style="  position: absolute;
-      top: 240px;
-      left: 10px;
-      transform: translateY(-50%);">
-        <input type="text" id="email" placeholder="Email" required>
-        <div class="icon"><i class="bi bi-envelope"></i></div>
-      </div>
-      <div class="input_box" style="  position: absolute;
-      top: 300px;
-      left: 10px;
-      transform: translateY(-50%);">
-        <input type="text" id="username" placeholder="Username" required>
-        <div class="icon"><i class="bi bi-person"></i></div>
-      </div>
-      <div class="option_div">
-        
-    </div>
-      <div class="input_box button" style="  position: absolute;
-      top: 390px;
-      left: 10px;
-      transform: translateY(-50%);">
-        <input type="submit" id="logIn" value="Continue"> 
-      </div>
-      <div class="sign_up">
-        Already have a account? <a href="#">Login</a>
-      </div>
-  </form>
+       
+                  <div class="input_box" style="  position: absolute;
+                  top: 170px;
+                  left: 10px;
+                  transform: translateY(-50%);">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <div class="icon"><i class="bi bi-person"></i></div>
+                  </div>
+                  <div class="input_box" style="  position: absolute;
+                  top: 230px;
+                  left: 10px;
+                  transform: translateY(-50%);">
+                    <input type="text" id="email" placeholder="Email" required>
+                    <div class="icon"><i class="bi bi-envelope"></i></div>
+                  </div>
+                  <div class="input_box" style="  position: absolute;
+                  top: 290px;
+                  left: 10px;
+                  transform: translateY(-50%);">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <div class="icon"><i class="bi bi-key"></i></div>
+                  </div>
+                  <p style=" white-space: nowrap;font-size: 0.7em; margin-top: 41%; margin-left:-2%;">By creating an account you agree to our <a href="terms" style="color:dodgerblue;">Terms of service</a>.</p>
+                  <div class="input_box button" style="  position: absolute;
+                  top: 390px;
+                  left: 10px;
+                  transform: translateY(-50%);">
+                    <input type="submit" id="signUp" value="Signup">
+                  </div>
+                  <div class="sign_up">
+                    Already have an account? <a href="#">Login</a>
+                  </div>
+  </div>
 </div>
 
 <script>
@@ -785,7 +891,7 @@ var modal = document.getElementById('id01');
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-        document.querySelector("body").style.overflow = 'overlay';
+        document.querySelector("body").style.overflow = 'overlay';   
     }
 }
 document.querySelector("#open-modal-button").addEventListener('click', function() {
@@ -820,12 +926,12 @@ document.querySelector("#close-modal-button").addEventListener('click', function
   const database = getDatabase(app);
   const auth = getAuth();
 
-  logIn.addEventListener('click',(e)=> {
+  signUp.addEventListener('click',(e)=> {
 
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
     var username = document.getElementById('username').value;
-    var username = document.getElementById('fullname').value;
+
 
     createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
@@ -903,4 +1009,47 @@ logout.addEventListener('click',(e)=>{
 
 });
 </script>
+<script>
+   /**
+   * Download button
+   */
+let userAgent = navigator.appVersion;
+let osDetails = {
+  name: 'Unknown OS',
+  icon: 'bi-question-circle'
+};
+
+if (userAgent.includes('Macintosh')) {
+  osDetails.name = 'Mac';
+  osDetails.icon = 'bi-download';
+}
+
+if (userAgent.includes('Windows')) {
+  osDetails.name = 'Windows';
+  osDetails.icon = 'bi-download';
+}
+
+if (userAgent.includes('Linux')) {
+  osDetails.name = 'Linux';
+  osDetails.icon = 'bi-download';
+}
+
+if (userAgent.includes('iPhone')) {
+  osDetails.name = 'iPhone';
+  osDetails.icon = 'bi-download';
+}
+
+if (userAgent.includes('Android')) {
+  osDetails.name = 'Android';
+  osDetails.icon = 'bi-download';
+}
+updateOsDownloadButton(osDetails);
+
+
+function updateOsDownloadButton(osDetails) {
+  let iconHtml = '<i class="icon bi ' + osDetails.icon + '"></i>'
+  document.querySelector('.btn-download-os').innerHTML = iconHtml + ' Download for ' + osDetails.name
+}
+</script>
+</body>
 </html>
